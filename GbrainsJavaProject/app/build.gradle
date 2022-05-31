@@ -32,6 +32,28 @@ android {
 }
 
 dependencies {
+    // font
+    implementation "io.github.inflationx:calligraphy3:3.1.1"
+    implementation "io.github.inflationx:viewpump:2.0.3"
+
+    // database
+    implementation "org.greenrobot:greendao:3.3.0"
+
+    // network
+    implementation "com.amitshekhar.android:rx2-android-networking:1.0.2"
+    // reactive
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    // logger
+    implementation "com.jakewharton.timber:timber:5.0.1"
+
+    // Multidex
+    implementation "androidx.multidex:multidex:2.0.1"
+
+    //Navigation component
+    implementation 'androidx.navigation:navigation-fragment:2.4.2'
+    implementation 'androidx.navigation:navigation-ui:2.4.2'
 
     //Android SDK
     implementation 'androidx.appcompat:appcompat:1.4.1'
