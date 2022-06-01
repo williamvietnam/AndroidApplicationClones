@@ -4,12 +4,16 @@ import com.nbgsoftware.gbrains.base.BasePresenter;
 import com.nbgsoftware.gbrains.data.DataManager;
 import com.nbgsoftware.gbrains.utils.rx.SchedulerProvider;
 
+import javax.inject.Inject;
+
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 
 public class SplashPresenter<V extends SplashContract.View> extends BasePresenter<V>
         implements SplashContract.Presenter<V> {
 
+    private int number = 0;
 
+    @Inject
     public SplashPresenter(DataManager dataManager,
                            SchedulerProvider schedulerProvider,
                            CompositeDisposable compositeDisposable) {
@@ -23,5 +27,11 @@ public class SplashPresenter<V extends SplashContract.View> extends BasePresente
                 getView().openWelcomeScreen();
             }
         }
+    }
+
+    @Override
+    public void increase() {
+        number++;
+        getView().showData(number);
     }
 }

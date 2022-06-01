@@ -13,9 +13,4 @@ public class MainFragment extends BaseFragment<FragmentMainBinding> implements M
     public FragmentMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
          return FragmentMainBinding.inflate(inflater, container, false);
     }
-
-    @Override
-    public void initializeView() {
-
-    }
 }

@@ -4,7 +4,7 @@ import androidx.annotation.StringRes;
 
 public interface BaseContract {
     interface View {
-        void initializeView();
+//        void initializeView();
 
 //        void showLoading();
 

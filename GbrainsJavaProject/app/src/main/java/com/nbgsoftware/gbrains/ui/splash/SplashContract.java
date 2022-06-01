@@ -11,9 +11,13 @@ public interface SplashContract extends BaseContract {
         void openSignInScreen();
 
         void startSyncService();
+
+        void showData(int number);
     }
 
     interface Presenter<V extends View> extends BaseContract.Presenter<V> {
         void decideNextScreen();
+
+        void increase();
     }
 }

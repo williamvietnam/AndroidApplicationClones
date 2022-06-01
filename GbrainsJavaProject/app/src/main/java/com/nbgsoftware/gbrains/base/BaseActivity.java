@@ -10,20 +10,21 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
+import com.nbgsoftware.gbrains.di.components.ActivityComponent;
 import com.nbgsoftware.gbrains.utils.NetworkUtils;
 
 public abstract class BaseActivity<VB extends ViewBinding>
         extends AppCompatActivity implements BaseContract.View {
 
+    private ActivityComponent activityComponent;
     public VB binding;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = getActivityBinding();
         setContentView(binding.getRoot());
-
-        initializeView();
     }
 
     @Override
@@ -66,4 +67,8 @@ public abstract class BaseActivity<VB extends ViewBinding>
     }
 
     protected abstract VB getActivityBinding();
+
+    public ActivityComponent getActivityComponent() {
+        return activityComponent;
+    }
 }

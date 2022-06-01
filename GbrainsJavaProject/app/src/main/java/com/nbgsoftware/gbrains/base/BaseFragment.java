@@ -13,6 +13,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
+import com.nbgsoftware.gbrains.di.components.ActivityComponent;
 import com.nbgsoftware.gbrains.utils.AppLogger;
 
 public abstract class BaseFragment<VB extends ViewBinding> extends Fragment implements BaseContract.View {
@@ -27,12 +28,6 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
                              @Nullable Bundle savedInstanceState) {
         binding = createViewBinding(inflater, container);
         return binding.getRoot();
-    }
-
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        initializeView();
     }
 
     @Override
@@ -93,4 +88,11 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
     }
 
     public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
+
+    public ActivityComponent getActivityComponent() {
+        if (activity != null) {
+            return activity.getActivityComponent();
+        }
+        return null;
+    }
 }

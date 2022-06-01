@@ -13,11 +13,4 @@ public class ContainerActivity extends BaseActivity<ActivityContainerBinding> {
     protected ActivityContainerBinding getActivityBinding() {
         return ActivityContainerBinding.inflate(getLayoutInflater());
     }
-
-    @Override
-    public void initializeView() {
-        NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.navHostFragment);
-        assert navHostFragment != null;
-        NavController navController = navHostFragment.getNavController();
-    }
 }
