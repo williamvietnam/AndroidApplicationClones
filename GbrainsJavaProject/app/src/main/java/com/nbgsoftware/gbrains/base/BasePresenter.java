@@ -3,7 +3,7 @@ package com.nbgsoftware.gbrains.base;
 import com.nbgsoftware.gbrains.data.DataManager;
 import com.nbgsoftware.gbrains.utils.rx.SchedulerProvider;
 
-import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
 
 public class BasePresenter<V extends BaseContract.View> implements BaseContract.Presenter<V> {
 
@@ -14,8 +14,7 @@ public class BasePresenter<V extends BaseContract.View> implements BaseContract.
     private V view;
 
     public BasePresenter(DataManager dataManager,
-                         SchedulerProvider schedulerProvider,
-                         CompositeDisposable compositeDisposable) {
+                         SchedulerProvider schedulerProvider, CompositeDisposable compositeDisposable) {
         this.dataManager = dataManager;
         this.schedulerProvider = schedulerProvider;
     }

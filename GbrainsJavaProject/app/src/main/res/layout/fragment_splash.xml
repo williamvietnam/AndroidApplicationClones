@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="188dp"
+        android:layout_height="188dp"
+        android:contentDescription="@string/imageview_title_splash"
+        android:scaleType="centerCrop"
+        tool:background="#FF3D00" />
+
+    <TextView
+        android:id="@+id/tvTitleSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="16dp"
+        android:text="@string/title_splash"
+        android:textColor="#FF3D00"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDescriptionSplash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="6dp"
+        android:text="@string/description_splash"
+        android:textColor="#FF3D00"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+</LinearLayout>

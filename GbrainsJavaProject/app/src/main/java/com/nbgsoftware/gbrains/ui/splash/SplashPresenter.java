@@ -4,21 +4,16 @@ import com.nbgsoftware.gbrains.base.BasePresenter;
 import com.nbgsoftware.gbrains.data.DataManager;
 import com.nbgsoftware.gbrains.utils.rx.SchedulerProvider;
 
-import io.reactivex.disposables.CompositeDisposable;
+import io.reactivex.rxjava3.disposables.CompositeDisposable;
 
 public class SplashPresenter<V extends SplashContract.View> extends BasePresenter<V>
         implements SplashContract.Presenter<V> {
+
 
     public SplashPresenter(DataManager dataManager,
                            SchedulerProvider schedulerProvider,
                            CompositeDisposable compositeDisposable) {
         super(dataManager, schedulerProvider, compositeDisposable);
-    }
-
-    @Override
-    public void onAttach(V view) {
-        super.onAttach(view);
-        getView().startSyncService();
     }
 
     @Override

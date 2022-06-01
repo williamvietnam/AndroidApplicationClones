@@ -1,6 +1,6 @@
 package com.nbgsoftware.gbrains.utils.rx;
 
-import io.reactivex.Scheduler;
+import io.reactivex.rxjava3.core.Scheduler;
 
 public interface SchedulerProvider {
 

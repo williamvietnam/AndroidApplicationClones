@@ -11,6 +11,7 @@ import com.nbgsoftware.gbrains.databinding.FragmentSplashBinding;
 
 public class SplashFragment extends BaseFragment<FragmentSplashBinding> implements SplashContract.View {
 
+
     SplashPresenter<SplashContract.View> presenter;
 
     @Override
@@ -22,6 +23,11 @@ public class SplashFragment extends BaseFragment<FragmentSplashBinding> implemen
     @Override
     public FragmentSplashBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
         return FragmentSplashBinding.inflate(inflater, container, false);
+    }
+
+    @Override
+    public void initializeView() {
+
     }
 
     @Override

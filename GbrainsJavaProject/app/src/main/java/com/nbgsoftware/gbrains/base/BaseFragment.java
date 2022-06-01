@@ -30,11 +30,18 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
     }
 
     @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initializeView();
+    }
+
+    @Override
     public void onAttach(@NonNull Context context) {
         AppLogger.d(getFragmentTag() + ": on attaching to context " + context);
         super.onAttach(context);
         if (context instanceof BaseActivity) {
-            this.activity = (BaseActivity<VB>) context;
+            BaseActivity activity = (BaseActivity) context;
+            this.activity = activity;
         }
     }
 

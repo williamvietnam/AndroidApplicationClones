@@ -22,6 +22,8 @@ public abstract class BaseActivity<VB extends ViewBinding>
         super.onCreate(savedInstanceState);
         binding = getActivityBinding();
         setContentView(binding.getRoot());
+
+        initializeView();
     }
 
     @Override
