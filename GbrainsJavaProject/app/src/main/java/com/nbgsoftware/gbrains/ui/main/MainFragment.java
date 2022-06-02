@@ -8,7 +8,6 @@ import com.nbgsoftware.gbrains.databinding.FragmentMainBinding;
 
 public class MainFragment extends BaseFragment<FragmentMainBinding> implements MainContract.View {
 
-
     @Override
     public FragmentMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
          return FragmentMainBinding.inflate(inflater, container, false);

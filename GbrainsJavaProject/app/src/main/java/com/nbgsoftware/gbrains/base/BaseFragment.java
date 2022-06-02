@@ -1,6 +1,5 @@
 package com.nbgsoftware.gbrains.base;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +11,6 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
-
-import com.nbgsoftware.gbrains.di.components.ActivityComponent;
-import com.nbgsoftware.gbrains.utils.AppLogger;
 
 public abstract class BaseFragment<VB extends ViewBinding> extends Fragment implements BaseContract.View {
 
@@ -28,16 +24,6 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
                              @Nullable Bundle savedInstanceState) {
         binding = createViewBinding(inflater, container);
         return binding.getRoot();
-    }
-
-    @Override
-    public void onAttach(@NonNull Context context) {
-        AppLogger.d(getFragmentTag() + ": on attaching to context " + context);
-        super.onAttach(context);
-        if (context instanceof BaseActivity) {
-            BaseActivity activity = (BaseActivity) context;
-            this.activity = activity;
-        }
     }
 
     @Override
@@ -88,11 +74,4 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
     }
 
     public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
-
-    public ActivityComponent getActivityComponent() {
-        if (activity != null) {
-            return activity.getActivityComponent();
-        }
-        return null;
-    }
 }

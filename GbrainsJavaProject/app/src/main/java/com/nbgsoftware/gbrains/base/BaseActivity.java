@@ -10,13 +10,11 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.nbgsoftware.gbrains.di.components.ActivityComponent;
 import com.nbgsoftware.gbrains.utils.NetworkUtils;
 
 public abstract class BaseActivity<VB extends ViewBinding>
         extends AppCompatActivity implements BaseContract.View {
 
-    private ActivityComponent activityComponent;
     public VB binding;
 
     @Override
@@ -67,8 +65,4 @@ public abstract class BaseActivity<VB extends ViewBinding>
     }
 
     protected abstract VB getActivityBinding();
-
-    public ActivityComponent getActivityComponent() {
-        return activityComponent;
-    }
 }

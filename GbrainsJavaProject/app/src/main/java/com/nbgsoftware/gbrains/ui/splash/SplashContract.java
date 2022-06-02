@@ -2,7 +2,7 @@ package com.nbgsoftware.gbrains.ui.splash;
 
 import com.nbgsoftware.gbrains.base.BaseContract;
 
-public interface SplashContract extends BaseContract {
+public interface SplashContract{
     interface View extends BaseContract.View {
         void openMainScreen();
 
