@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.base;
+package com.nbgsoftware.gbrains.baseMVP;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,9 +12,9 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
-public abstract class BaseFragment<VB extends ViewBinding> extends Fragment implements BaseContract.View {
+public abstract class MVPFragment<VB extends ViewBinding> extends Fragment implements MVPContract.View {
 
-    private BaseActivity<VB> activity;
+    private MVPActivity<VB> activity;
     public VB binding;
 
     @Nullable
@@ -69,7 +69,7 @@ public abstract class BaseFragment<VB extends ViewBinding> extends Fragment impl
         return this.getClass().getCanonicalName();
     }
 
-    public BaseActivity<VB> getBaseActivity() {
+    public MVPActivity<VB> getBaseActivity() {
         return activity;
     }
 

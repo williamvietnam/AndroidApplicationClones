@@ -9,10 +9,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.nbgsoftware.gbrains.base.BaseFragment;
+import com.nbgsoftware.gbrains.baseMVP.MVPFragment;
 import com.nbgsoftware.gbrains.databinding.FragmentSplashBinding;
 
-public class SplashFragment extends BaseFragment<FragmentSplashBinding> implements SplashContract.View {
+public class SplashFragment extends MVPFragment<FragmentSplashBinding> implements SplashContract.View {
 
     SplashContract.Presenter<SplashContract.View> presenter = new SplashPresenter<>();
 

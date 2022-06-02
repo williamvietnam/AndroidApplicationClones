@@ -5,13 +5,13 @@ import android.content.SharedPreferences;
 
 import androidx.annotation.NonNull;
 
-public class AppPreferencesHelper implements PreferencesHelper {
+public class PreferencesHelperImplement implements PreferencesHelper {
 
     private static final String PREF_KEY_IS_SHOW_WELCOME_SCREEN = "PREF_KEY_IS_SHOW_WELCOME_SCREEN";
 
     private final SharedPreferences prefs;
 
-    public AppPreferencesHelper(@NonNull Context context, String prefFileName) {
+    public PreferencesHelperImplement(@NonNull Context context, String prefFileName) {
         this.prefs = context.getSharedPreferences(prefFileName, Context.MODE_PRIVATE);
     }
 

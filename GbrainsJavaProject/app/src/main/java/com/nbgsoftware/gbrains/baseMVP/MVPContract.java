@@ -1,8 +1,8 @@
-package com.nbgsoftware.gbrains.base;
+package com.nbgsoftware.gbrains.baseMVP;
 
 import androidx.annotation.StringRes;
 
-public interface BaseContract {
+public interface MVPContract {
     interface View {
         void showMessage(String message);
 

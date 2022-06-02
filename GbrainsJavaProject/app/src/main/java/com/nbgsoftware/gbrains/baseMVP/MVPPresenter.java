@@ -1,6 +1,6 @@
-package com.nbgsoftware.gbrains.base;
+package com.nbgsoftware.gbrains.baseMVP;
 
-public abstract class BasePresenter<V extends BaseContract.View> implements BaseContract.Presenter<V> {
+public abstract class MVPPresenter<V extends MVPContract.View> implements MVPContract.Presenter<V> {
 
     private V view;
 

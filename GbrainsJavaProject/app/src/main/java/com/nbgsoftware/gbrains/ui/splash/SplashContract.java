@@ -1,9 +1,9 @@
 package com.nbgsoftware.gbrains.ui.splash;
 
-import com.nbgsoftware.gbrains.base.BaseContract;
+import com.nbgsoftware.gbrains.baseMVP.MVPContract;
 
 public interface SplashContract{
-    interface View extends BaseContract.View {
+    interface View extends MVPContract.View {
         void openMainScreen();
 
         void openWelcomeScreen();
@@ -15,7 +15,7 @@ public interface SplashContract{
         void showData(int number);
     }
 
-    interface Presenter<V extends View> extends BaseContract.Presenter<V> {
+    interface Presenter<V extends View> extends MVPContract.Presenter<V> {
         void decideNextScreen();
 
         void increase();

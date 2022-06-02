@@ -1,13 +1,13 @@
 package com.nbgsoftware.gbrains.ui.main;
 
-import com.nbgsoftware.gbrains.base.BaseContract;
+import com.nbgsoftware.gbrains.baseMVP.MVPContract;
 
 public interface MainContract {
-    interface View extends BaseContract.View {
+    interface View extends MVPContract.View {
 
     }
 
-    interface Presenter<V extends View> extends BaseContract.Presenter<V>{
+    interface Presenter<V extends View> extends MVPContract.Presenter<V>{
 
     }
 }

@@ -1,6 +1,5 @@
-package com.nbgsoftware.gbrains.base;
+package com.nbgsoftware.gbrains.baseMVP;
 
-import android.app.FragmentManager;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +13,7 @@ import androidx.viewbinding.ViewBinding;
 
 public abstract class BaseDialog<VB extends ViewBinding> extends DialogFragment implements BaseDialogView {
 
-    private BaseActivity<VB> activity;
+    private MVPActivity<VB> activity;
     public VB binding;
 
     @Nullable
@@ -29,8 +28,8 @@ public abstract class BaseDialog<VB extends ViewBinding> extends DialogFragment 
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof BaseActivity) {
-            this.activity =  (BaseActivity<VB>) context;
+        if (context instanceof MVPActivity) {
+            this.activity =  (MVPActivity<VB>) context;
         }
     }
 
@@ -39,7 +38,7 @@ public abstract class BaseDialog<VB extends ViewBinding> extends DialogFragment 
         dismiss();
     }
 
-    public BaseActivity<VB> getBaseActivity() {
+    public MVPActivity<VB> getBaseActivity() {
         return activity;
     }
 

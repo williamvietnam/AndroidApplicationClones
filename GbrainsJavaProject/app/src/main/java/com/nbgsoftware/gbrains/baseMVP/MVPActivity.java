@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.base;
+package com.nbgsoftware.gbrains.baseMVP;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.viewbinding.ViewBinding;
 
 import com.nbgsoftware.gbrains.utils.NetworkUtils;
 
-public abstract class BaseActivity<VB extends ViewBinding>
-        extends AppCompatActivity implements BaseContract.View {
+public abstract class MVPActivity<VB extends ViewBinding>
+        extends AppCompatActivity implements MVPContract.View {
 
     public VB binding;
 

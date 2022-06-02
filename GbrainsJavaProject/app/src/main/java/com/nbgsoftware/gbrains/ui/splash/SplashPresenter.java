@@ -1,8 +1,8 @@
 package com.nbgsoftware.gbrains.ui.splash;
 
-import com.nbgsoftware.gbrains.base.BasePresenter;
+import com.nbgsoftware.gbrains.baseMVP.MVPPresenter;
 
-public class SplashPresenter<V extends SplashContract.View> extends BasePresenter<V>
+public class SplashPresenter<V extends SplashContract.View> extends MVPPresenter<V>
         implements SplashContract.Presenter<V> {
 
     private static int number = 0;
