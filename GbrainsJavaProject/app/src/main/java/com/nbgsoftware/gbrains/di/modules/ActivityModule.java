@@ -13,6 +13,9 @@ import dagger.Module;
 import dagger.Provides;
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 
+/**
+ * Tạm thời chưa sử dụng dependency injection
+ * */
 @Module
 public class ActivityModule {
 
