@@ -1,10 +1,10 @@
-package com.nbgsoftware.gbrains
+package com.nbgsoftware.gbrains.ui.container
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.nbgsoftware.gbrains.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class ContainerActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
