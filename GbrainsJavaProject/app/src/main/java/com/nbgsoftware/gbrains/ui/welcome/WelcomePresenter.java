@@ -1,14 +1,11 @@
 package com.nbgsoftware.gbrains.ui.welcome;
 
 import android.content.Context;
-import android.util.Log;
 
 import com.google.gson.Gson;
 import com.nbgsoftware.gbrains.baseMVP.MVPPresenter;
 import com.nbgsoftware.gbrains.data.models.response.WelcomeResponse;
 import com.nbgsoftware.gbrains.utils.Utils;
-
-import timber.log.Timber;
 
 public class WelcomePresenter<V extends WelcomeContract.View>
         extends MVPPresenter<V> implements WelcomeContract.Presenter<V> {

@@ -9,7 +9,7 @@ public class SplashPresenter<V extends SplashContract.View>
 
     @Override
     public void getData() {
-        Splash splash = new Splash(LinkResource.URL_SPLASH_1, "Gbrains App", "Cùng nhau học tập và chia sẻ kiến thức");
+        Splash splash = new Splash(LinkResource.URL_SPLASH_2, "Cộng đồng Gbrains", "Cùng nhau học tập và chia sẻ kiến thức");
         if (getView() != null) {
             getView().showData(splash);
         }

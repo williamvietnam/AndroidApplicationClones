@@ -2,21 +2,21 @@
   "welcome": [
     {
       "id": 1,
-      "title": "Welcome 1111111111111",
-      "image": "https://inteng-storage.s3.amazonaws.com/img/iea/EBwmBQnjO0/history-of-netflix-stanger-things.jpg",
-      "description": "description 111111 description 111111 description"
+      "title": "Trao đổi và Chia sẻ",
+      "image": "https://toppng.com/uploads/preview/knowledge-icon-knowledge-transfer-icon-transparent-11553466374doiqw9r3xr.png",
+      "description": "Xây dựng cộng đồng công nghệ thông tin cùng nhau trao đổi và chia sẻ kiến thức trên nền tảng di động"
     },
     {
       "id": 2,
-      "title": "Welcome 22222222222222",
-      "image": "https://i.pinimg.com/originals/7b/e8/d4/7be8d418ccfc36ae8db6b43c299cb131.jpg",
-      "description": "description 222222 description 22222 description"
+      "title": "Học tập và Kiểm tra",
+      "image": "https://c8.alamy.com/comp/J2HB9W/quiz-modern-design-glossy-orange-web-icon-on-white-background-J2HB9W.jpg",
+      "description": "Đội ngũ phát triển liên tục cập nhật các bài giảng và bộ câu hỏi kiểm tra kiến thức mới nhất và nhanh nhất"
     },
     {
       "id": 3,
-      "title": "Welcome 3333333333333",
-      "image": "https://images1.houstonpress.com/imager/u/original/11435294/netflix.jpg",
-      "description": "description 333333 description 333333 description"
+      "title": "Học tập như giải trí",
+      "image": "https://thumbs.dreamstime.com/b/chart-graph-icon-long-shadow-business-flat-vector-illustra-illustration-orange-background-96385664.jpg",
+      "description": "Hoàn thành xuất sắc bài kiểm tra sẽ được điểm thưởng và xếp hạng trong bảng xếp hạng của cộng đồng Gbrains"
     }
   ]
 }

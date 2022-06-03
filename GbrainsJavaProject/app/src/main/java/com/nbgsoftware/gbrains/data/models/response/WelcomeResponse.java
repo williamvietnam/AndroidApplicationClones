@@ -1,14 +1,17 @@
 package com.nbgsoftware.gbrains.data.models.response;
 
+import com.google.gson.annotations.SerializedName;
 import com.nbgsoftware.gbrains.data.models.Welcome;
 
 import java.util.List;
 
 public class WelcomeResponse {
+
+    @SerializedName("welcome")
     private List<Welcome> welcomeList;
 
     public WelcomeResponse(List<Welcome> welcomeList) {
-        this.welcomeList = welcomeList;
+        setWelcomeList(welcomeList);
     }
 
     public List<Welcome> getWelcomeList() {

@@ -1,16 +1,23 @@
 package com.nbgsoftware.gbrains.data.models;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Welcome {
+
+    @SerializedName("id")
     private int id;
+    @SerializedName("title")
     private String title;
+    @SerializedName("image")
     private String image;
+    @SerializedName("description")
     private String description;
 
     public Welcome(int id, String title, String image, String description) {
-        this.id = id;
-        this.title = title;
-        this.image = image;
-        this.description = description;
+        setId(id);
+        setTitle(title);
+        setImage(image);
+        setDescription(description);
     }
 
     public int getId() {

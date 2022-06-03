@@ -12,17 +12,17 @@ import java.nio.charset.StandardCharsets;
 public class Utils {
 
     /**
-     * Phương thức này giúp ta lấy được chuỗi trong file json từ file lưu trong assets
+     * Phương thức này giúp ta lấy được chuỗi trong file json lưu tại assets
      */
     @Nullable
     public static String getJsonFromAssets(String filename, @NonNull Context context) {
         String jsonString;
         try {
-            InputStream is = context.getAssets().open(filename);
-            int size = is.available();
+            InputStream inputStream = context.getAssets().open(filename);
+            int size = inputStream.available();
             byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
+            inputStream.read(buffer);
+            inputStream.close();
             jsonString = new String(buffer, StandardCharsets.UTF_8);
         } catch (IOException e) {
             e.printStackTrace();

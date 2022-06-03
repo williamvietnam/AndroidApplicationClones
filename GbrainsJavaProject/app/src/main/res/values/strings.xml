@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">GbrainsJavaProject</string>
     <string name="imageview_title_splash">ImageView Title Splash</string>
-    <string name="title_splash">Gbrains App</string>
+    <string name="title_splash">Cộng đồng Gbrains</string>
     <string name="description_splash">Cùng nhau học tập và chia sẻ kiến thức</string>
     <string name="get_started">Bắt đầu</string>
     <string name="skip"><u>Bỏ qua</u></string>

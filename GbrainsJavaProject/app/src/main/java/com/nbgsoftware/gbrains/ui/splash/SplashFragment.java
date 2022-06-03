@@ -47,7 +47,7 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
             public void run() {
                 presenter.decideNextScreen();
             }
-        }, 1500);
+        }, 2000);
     }
 
     @Override
@@ -57,7 +57,7 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
     }
 
     @Override
-    public void showData(Splash splash) {
+    public void showData(@NonNull Splash splash) {
         Glide.with(this).load(splash.getImageRes()).into(binding.ivSplash);
         binding.tvTitleSplash.setText(splash.getTitle());
         binding.tvDescriptionSplash.setText(splash.getDescription());

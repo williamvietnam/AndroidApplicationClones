@@ -5,40 +5,41 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:gravity="center"
-    android:orientation="vertical">
-
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/ivSplash"
-        android:layout_width="@dimen/_232sdp"
-        android:layout_height="@dimen/_232sdp"
-        android:contentDescription="@string/imageview_title_splash"
-        android:scaleType="centerCrop"
-        android:src="@drawable/image_splash"
-        app:riv_corner_radius="@dimen/_8sdp" />
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_24sdp">
 
     <TextView
         android:id="@+id/tvTitleSplash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:paddingHorizontal="16dp"
         android:text="@string/title_splash"
         android:textColor="@color/primary"
-        android:textSize="32sp"
+        android:textSize="@dimen/_26ssp"
         android:textStyle="bold" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="@dimen/_232sdp"
+        android:layout_height="@dimen/_232sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:contentDescription="@string/imageview_title_splash"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_splash"
+        app:riv_corner_radius="@dimen/_128sdp" />
 
     <TextView
         android:id="@+id/tvDescriptionSplash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:gravity="center_horizontal"
         android:paddingHorizontal="6dp"
         android:text="@string/description_splash"
         android:textColor="@color/primary"
-        android:textSize="18sp"
+        android:textSize="@dimen/_16ssp"
         android:textStyle="italic|bold" />
 </LinearLayout>
