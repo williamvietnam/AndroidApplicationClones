@@ -2,6 +2,7 @@ package com.nbgsoftware.gbrains.ui.splash;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,7 +10,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.bumptech.glide.Glide;
+import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.baseMVP.MVPFragment;
+import com.nbgsoftware.gbrains.data.models.Splash;
 import com.nbgsoftware.gbrains.databinding.FragmentSplashBinding;
 
 public class SplashFragment extends MVPFragment<FragmentSplashBinding> implements SplashContract.View {
@@ -31,8 +35,19 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         presenter.onViewCreated();
+        presenter.getData();
+    }
 
-        binding.button.setOnClickListener(view1 -> presenter.increase());
+    @Override
+    public void onResume() {
+        super.onResume();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                presenter.decideNextScreen();
+            }
+        }, 1500);
     }
 
     @Override
@@ -42,27 +57,24 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
     }
 
     @Override
-    public void openMainScreen() {
+    public void showData(Splash splash) {
+        Glide.with(this).load(splash.getImageRes()).into(binding.ivSplash);
+        binding.tvTitleSplash.setText(splash.getTitle());
+        binding.tvDescriptionSplash.setText(splash.getDescription());
+    }
 
+    @Override
+    public void openMainScreen() {
+        findNavController().navigate(R.id.actionToMain);
     }
 
     @Override
     public void openWelcomeScreen() {
-
+        findNavController().navigate(R.id.actionWelcome);
     }
 
     @Override
     public void openSignInScreen() {
 
-    }
-
-    @Override
-    public void startSyncService() {
-        //nothing
-    }
-
-    @Override
-    public void showData(int number) {
-        binding.tvData.setText(String.valueOf(number));
     }
 }

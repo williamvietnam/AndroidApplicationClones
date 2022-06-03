@@ -1,0 +1,22 @@
+{
+  "welcome": [
+    {
+      "id": 1,
+      "title": "Welcome 1111111111111",
+      "image": "https://inteng-storage.s3.amazonaws.com/img/iea/EBwmBQnjO0/history-of-netflix-stanger-things.jpg",
+      "description": "description 111111 description 111111 description"
+    },
+    {
+      "id": 2,
+      "title": "Welcome 22222222222222",
+      "image": "https://i.pinimg.com/originals/7b/e8/d4/7be8d418ccfc36ae8db6b43c299cb131.jpg",
+      "description": "description 222222 description 22222 description"
+    },
+    {
+      "id": 3,
+      "title": "Welcome 3333333333333",
+      "image": "https://images1.houstonpress.com/imager/u/original/11435294/netflix.jpg",
+      "description": "description 333333 description 333333 description"
+    }
+  ]
+}

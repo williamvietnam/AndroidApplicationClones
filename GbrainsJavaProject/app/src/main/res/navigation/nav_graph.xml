@@ -12,8 +12,55 @@
         tools:layout="@layout/fragment_splash">
 
         <action
+            android:id="@+id/actionWelcome"
+            app:destination="@id/welcomeFragment" />
+
+        <action
+            android:id="@+id/actionToSignIn"
+            app:destination="@id/signInFragment" />
+
+        <action
             android:id="@+id/actionToMain"
             app:destination="@id/mainFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.nbgsoftware.gbrains.ui.welcome.WelcomeFragment"
+        android:label="welcomeFragment"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/actionToSignIn"
+            app:destination="@id/signInFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.nbgsoftware.gbrains.ui.signin.SignInFragment"
+        android:label="signInFragment"
+        tools:layout="@layout/fragment_sign_in">
+
+        <action
+            android:id="@+id/actionToSignUp"
+            app:destination="@id/signUpFragment" />
+
+        <action
+            android:id="@+id/actionToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.nbgsoftware.gbrains.ui.signup.SignUpFragment"
+        android:label="signUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+
+        <action
+            android:id="@+id/actionToSignIn"
+            app:destination="@id/signInFragment" />
 
     </fragment>
 
@@ -21,7 +68,9 @@
         android:id="@+id/mainFragment"
         android:name="com.nbgsoftware.gbrains.ui.main.MainFragment"
         android:label="mainFragment"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main">
 
-    
+
+    </fragment>
+
 </navigation>

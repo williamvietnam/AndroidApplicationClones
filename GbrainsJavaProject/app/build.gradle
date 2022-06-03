@@ -33,6 +33,19 @@ android {
 }
 
 dependencies {
+    //gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    //circleIndicator3
+    implementation 'me.relex:circleindicator:2.1.6'
+
+    // dimens
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'
+
+    //RoundedImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
     //dependency injection with dagger
     implementation 'com.google.dagger:dagger:2.41'
     annotationProcessor 'com.google.dagger:dagger-compiler:2.41'
@@ -40,6 +53,8 @@ dependencies {
     //image with glide
     implementation 'com.github.bumptech.glide:glide:4.13.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.1'
+    //image with picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     // font
     implementation "io.github.inflationx:calligraphy3:3.1.1"

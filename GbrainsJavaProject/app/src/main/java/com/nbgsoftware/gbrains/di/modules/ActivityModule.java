@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.nbgsoftware.gbrains.ui.splash.SplashContract;
 import com.nbgsoftware.gbrains.ui.splash.SplashPresenter;
-import com.nbgsoftware.gbrains.utils.rx.AppSchedulerProvider;
+import com.nbgsoftware.gbrains.utils.rx.SchedulerProviderImpl;
 import com.nbgsoftware.gbrains.utils.rx.SchedulerProvider;
 
 import dagger.Module;
@@ -42,7 +42,7 @@ public class ActivityModule {
 
     @Provides
     SchedulerProvider provideSchedulerProvider() {
-        return new AppSchedulerProvider();
+        return new SchedulerProviderImpl();
     }
 
     @Provides
