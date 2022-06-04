@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -30,15 +31,29 @@ android {
         jvmTarget = '1.8'
     }
 
-    buildFeatures{
-        viewBinding true
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
     }
 }
 
 dependencies {
 
+    // Alert Library (This library aims to overcome the limitations of Toasts and SnackBars)
+    implementation 'com.github.tapadoo:alerter:7.2.4'
+
+    //Android loading animations
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //Change Language Programmatically in Android
+    implementation 'com.zeugmasolutions.localehelper:locale-helper-android:1.5.1'
+
+    //NavigationComponent
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
     //Android SDK:
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

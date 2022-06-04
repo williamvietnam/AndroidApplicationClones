@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/fragment_splash.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/progress_dialog.xml" value="0.18717948717948718" />
       </map>
     </option>
   </component>
