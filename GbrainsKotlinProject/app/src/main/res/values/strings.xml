@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">GbrainsKotlinProject</string>
+    <string name="description_splash">{description splash}</string>
+    <string name="title_splash">{title splash}</string>
+    <string name="image_view_splash">imageViewSplash</string>
+
+    <string name="connection_error">Kết nối thất bại</string>
+    <string name="no_internet">Không có internet</string>
+    <string name="some_error">Lỗi</string>
 </resources>

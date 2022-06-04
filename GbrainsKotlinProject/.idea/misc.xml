@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/fragment_splash.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsKotlinProject/app/src/main/res/layout/progress_dialog.xml" value="0.18717948717948718" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17_PREVIEW" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
