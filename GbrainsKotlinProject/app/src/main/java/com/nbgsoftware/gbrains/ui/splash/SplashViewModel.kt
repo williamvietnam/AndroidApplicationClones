@@ -1,4 +1,6 @@
 package com.nbgsoftware.gbrains.ui.splash
 
-class SplashViewModel {
+import com.nbgsoftware.gbrains.base.MVVMViewModel
+
+class SplashViewModel: MVVMViewModel() {
 }
