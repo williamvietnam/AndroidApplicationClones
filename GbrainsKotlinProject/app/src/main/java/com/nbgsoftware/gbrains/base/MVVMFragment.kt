@@ -15,7 +15,7 @@ import java.util.*
 
 abstract class MVVMFragment<DB : ViewDataBinding> : Fragment() {
 
-    private var _binding: DB? = null;
+    private var _binding: DB? = null
     open val binding get() = _binding!!
     private var rootView: View? = null
     private var hasInitializedRootView = false
@@ -61,7 +61,7 @@ abstract class MVVMFragment<DB : ViewDataBinding> : Fragment() {
     }
 
     private fun initializeDataBinding(inflater: LayoutInflater, container: ViewGroup?) {
-        _binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false);
+        _binding = DataBindingUtil.inflate(inflater, getLayoutId(), container, false)
 
         rootView = binding.root
         binding.lifecycleOwner = this
