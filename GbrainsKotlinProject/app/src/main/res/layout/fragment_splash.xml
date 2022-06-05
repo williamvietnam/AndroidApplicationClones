@@ -5,8 +5,8 @@
     <data>
 
         <variable
-            name="splash"
-            type="String" />
+            name="viewModel"
+            type="com.nbgsoftware.gbrains.ui.splash.SplashViewModel" />
     </data>
 
     <LinearLayout
@@ -19,7 +19,7 @@
         android:paddingBottom="32dp">
 
         <TextView
-            android:text="@{splash}"
+            android:text="@{}"
             android:id="@+id/tvTitleSplash"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

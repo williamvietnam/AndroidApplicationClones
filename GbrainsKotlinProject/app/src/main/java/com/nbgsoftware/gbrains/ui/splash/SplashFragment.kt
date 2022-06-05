@@ -14,5 +14,6 @@ class SplashFragment : MVVMFragmentViewModel<FragmentSplashBinding, SplashViewMo
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
     }
 }
