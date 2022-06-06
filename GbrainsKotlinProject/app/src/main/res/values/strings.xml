@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GbrainsKotlinProject</string>
+    <string name="app_name">Gbrains</string>
     <string name="description_splash">{description splash}</string>
     <string name="title_splash">{title splash}</string>
     <string name="image_view_splash">imageViewSplash</string>

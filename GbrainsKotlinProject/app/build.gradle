@@ -39,6 +39,9 @@ android {
 
 dependencies {
 
+    //RoundedImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
     // Alert Library (This library aims to overcome the limitations of Toasts and SnackBars)
     implementation 'com.github.tapadoo:alerter:7.2.4'
 
