@@ -13,6 +13,14 @@ public class Welcome {
     @SerializedName("description")
     private String description;
 
+    private int imageDrawable;
+
+    public Welcome(String title, int imageDrawable, String description) {
+        setTitle(title);
+        setImageDrawable(imageDrawable);
+        setDescription(description);
+    }
+
     public Welcome(int id, String title, String image, String description) {
         setId(id);
         setTitle(title);
@@ -50,5 +58,13 @@ public class Welcome {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getImageDrawable() {
+        return imageDrawable;
+    }
+
+    public void setImageDrawable(int imageDrawable) {
+        this.imageDrawable = imageDrawable;
     }
 }
