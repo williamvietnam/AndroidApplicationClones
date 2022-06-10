@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_indicator.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/thumbnail_welcome_1.xml" value="0.248" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_container.xml" value="0.2421875" />
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_splash.xml" value="0.2421875" />
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_welcome.xml" value="0.2421875" />

@@ -13,19 +13,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_16sdp"
         android:gravity="center_horizontal"
         android:textColor="@color/primary"
         android:textSize="@dimen/_28ssp"
         android:textStyle="bold"
         tool:text="{Title Welcome}" />
 
-    <com.makeramen.roundedimageview.RoundedImageView
+    <ImageView
         android:id="@+id/ivWelcome"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="@dimen/_200sdp"
         android:layout_marginTop="@dimen/_18sdp"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        app:riv_corner_radius="@dimen/_124sdp" />
+        app:riv_corner_radius="@dimen/_8sdp"
+        app:tint="@color/primary"
+        tool:src="@drawable/thumbnail_welcome_1" />
 
     <TextView
         android:id="@+id/tvDescription"

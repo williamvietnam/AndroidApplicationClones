@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.bumptech.glide.Glide;
 import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.baseMVP.MVPFragment;
 import com.nbgsoftware.gbrains.data.models.Splash;
@@ -58,7 +57,7 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
 
     @Override
     public void showData(@NonNull Splash splash) {
-        Glide.with(this).load(splash.getImageRes()).into(binding.ivSplash);
+        binding.ivSplash.setImageResource(splash.getImageDrawable());
         binding.tvTitleSplash.setText(splash.getTitle());
         binding.tvDescriptionSplash.setText(splash.getDescription());
     }

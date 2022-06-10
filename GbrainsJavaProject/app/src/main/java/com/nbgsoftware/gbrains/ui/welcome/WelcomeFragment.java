@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.nbgsoftware.gbrains.R;
-import com.nbgsoftware.gbrains.adapters.SlideWelcomeAdapter;
 import com.nbgsoftware.gbrains.baseMVP.MVPFragment;
 import com.nbgsoftware.gbrains.data.models.response.WelcomeResponse;
 import com.nbgsoftware.gbrains.databinding.FragmentWelcomeBinding;
@@ -38,7 +37,7 @@ public class WelcomeFragment extends MVPFragment<FragmentWelcomeBinding> impleme
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         presenter.onViewCreated();
-        presenter.getData(requireContext());
+        presenter.getDataFromLocalResource();
         binding.btnStarted.setOnClickListener(view1 -> findNavController().navigate(R.id.actionToSignIn));
     }
 

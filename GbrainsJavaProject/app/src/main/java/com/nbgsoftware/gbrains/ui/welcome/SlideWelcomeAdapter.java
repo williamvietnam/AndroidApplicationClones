@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.adapters;
+package com.nbgsoftware.gbrains.ui.welcome;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.data.models.Welcome;
 import com.nbgsoftware.gbrains.data.models.response.WelcomeResponse;
 import com.nbgsoftware.gbrains.databinding.SlideWelcomeBinding;
@@ -52,8 +53,8 @@ public class SlideWelcomeAdapter extends RecyclerView.Adapter<SlideWelcomeAdapte
 
         public void onBindData(int position) {
             Welcome welcome = welcomeResponse.getWelcomeList().get(position);
+            binding.ivWelcome.setImageResource(welcome.getImageDrawable());
             binding.tvTitle.setText(welcome.getTitle());
-            Glide.with(context).load(welcome.getImage()).into(binding.ivWelcome);
             binding.tvDescription.setText(welcome.getDescription());
         }
     }

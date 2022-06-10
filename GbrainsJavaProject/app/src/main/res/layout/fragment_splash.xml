@@ -27,8 +27,8 @@
         android:layout_marginTop="@dimen/_16sdp"
         android:contentDescription="@string/imageview_title_splash"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_splash"
-        app:riv_corner_radius="@dimen/_128sdp" />
+        android:src="@drawable/thumbnail_splash"
+        app:riv_corner_radius="@dimen/_8sdp" />
 
     <TextView
         android:id="@+id/tvDescriptionSplash"
