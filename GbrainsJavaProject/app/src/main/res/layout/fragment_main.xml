@@ -32,6 +32,10 @@
                 android:layout_margin="@dimen/_12sdp"
                 android:layout_height="wrap_content"
                 layout="@layout/widget_trending_posts_main" />
+
+            <include android:id="@+id/copyright"
+                layout="@layout/widget_copyright_main"
+                />
         </LinearLayout>
 
     </ScrollView>

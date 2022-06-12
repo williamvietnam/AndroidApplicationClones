@@ -16,6 +16,56 @@ public class MainFragment extends MVPFragment<FragmentMainBinding> implements Ma
          return FragmentMainBinding.inflate(inflater, container, false);
     }
 
+    @Override
+    public void openGbrainsCommunityScreen() {
+
+    }
+
+    @Override
+    public void openCreateQuestionScreen() {
+
+    }
+
+    @Override
+    public void openCourseScreen() {
+
+    }
+
+    @Override
+    public void openQuizScreen() {
+
+    }
+
+    @Override
+    public void openCreatePostScreen() {
+
+    }
+
+    @Override
+    public void openEcommerceScreen() {
+
+    }
+
+    @Override
+    public void openListFriendScreen() {
+
+    }
+
+    @Override
+    public void openExpandScreen() {
+
+    }
+
+    @Override
+    public void showFeaturedQuestions() {
+        //todo
+    }
+
+    @Override
+    public void showTrendingPosts() {
+        //todo
+    }
+
     //Banner quảng cáo các tính năng, bài giảng đánh giá cao (auto run chạy từ trái sang phải)
 
     /**

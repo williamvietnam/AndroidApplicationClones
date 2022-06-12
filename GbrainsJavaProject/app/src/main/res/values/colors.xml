@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="primary">#C62828</color>
-    <color name="secondPrimary">#F44336</color>
+    <color name="secondPrimary">#FFCDD2</color>
     <color name="background">#FFEBEE</color>
     <color name="secondBackground">#FFCDD2</color>
+    <color name="backgroundBlack">#110303</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>

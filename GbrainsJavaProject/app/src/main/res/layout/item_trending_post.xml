@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginVertical="@dimen/_6sdp">
+    android:layout_marginVertical="@dimen/_6sdp"
+    android:background="@color/backgroundBlack"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +23,6 @@
             app:riv_corner_radius="@dimen/_8sdp" />
 
         <TextView
-            android:textColor="@color/white"
             android:id="@+id/tvTitleTrendingPost"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -32,15 +32,13 @@
             android:maxLines="2"
             android:paddingStart="@dimen/_6sdp"
             android:paddingEnd="0dp"
+            android:textColor="@color/secondPrimary"
             android:textSize="@dimen/_13ssp"
             android:textStyle="bold"
             tools:text="Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào!" />
-
-
     </LinearLayout>
 
     <TextView
-        android:textColor="#9C9898"
         android:id="@+id/tvDescriptionTrendingPost"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,13 +46,14 @@
         android:ellipsize="end"
         android:lineHeight="@dimen/_18sdp"
         android:maxLines="4"
+        android:textColor="#9C9898"
         android:textSize="@dimen/_11ssp"
         tools:ignore="UnusedAttribute"
         tools:text="Từ một cậu bé ở vùng quê nghèo nhất thành phố, nơi mọi sự học hành thật là khó khăn, tôi đã cố gắng vươn lên thành phố, tại đây tôi bắt đầu hành trình tìm kiếm đam mê vs Công nghệ thông tin, và tôi đã làm android từ đó Công nghệ thông tin, và tôi đã làm android từ đó" />
 
     <View
-        android:layout_marginVertical="@dimen/_1sdp"
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="1dp"/>
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:background="@color/background" />
 </LinearLayout>

@@ -8,6 +8,7 @@
     android:padding="@dimen/_3sdp">
 
     <TextView
+       android:layout_toStartOf="@id/cardViewMenuSelect"
         android:id="@+id/tvTitleToolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,12 +18,13 @@
         android:background="@drawable/background_toolbar"
         android:gravity="center"
         android:padding="@dimen/_3sdp"
-        android:text="OurGbrains"
+        android:text="@string/ourgbrains"
         android:textColor="@color/primary"
         android:textSize="@dimen/_24ssp"
         android:textStyle="bold|italic" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewMenuSelect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -32,7 +34,7 @@
         app:cardCornerRadius="@dimen/_8sdp">
 
         <ImageView
-            android:id="@+id/imvSelect"
+            android:id="@+id/imvMenuSelect"
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:layout_margin="@dimen/_3sdp"
@@ -41,5 +43,4 @@
             app:tint="@color/primary" />
 
     </androidx.cardview.widget.CardView>
-
 </RelativeLayout>
