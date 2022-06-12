@@ -7,6 +7,7 @@
     app:cardCornerRadius="@dimen/_8sdp">
 
     <LinearLayout
+       android:paddingHorizontal="@dimen/_3sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

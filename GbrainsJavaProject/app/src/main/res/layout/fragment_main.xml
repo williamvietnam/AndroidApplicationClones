@@ -2,12 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:padding="@dimen/_8sdp">
+    android:background="@color/background">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,6 +16,7 @@
 
             <include
                 android:id="@+id/toolBar"
+                layout="@layout/widget_toolbar_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -26,6 +27,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp" />
 
+            <include android:id="@+id/trendingPosts"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                layout="@layout/widget_trending_posts_main" />
         </LinearLayout>
 
     </ScrollView>
