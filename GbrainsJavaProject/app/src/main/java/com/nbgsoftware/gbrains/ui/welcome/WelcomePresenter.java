@@ -31,6 +31,7 @@ public class WelcomePresenter<V extends WelcomeContract.View>
     /**
      * Cách 2: Lấy data từ tệp tài nguyên có sẵn trong app
      */
+    @Override
     public void getDataFromLocalResource() {
         List<Welcome> welcomeList = new ArrayList<>();
 

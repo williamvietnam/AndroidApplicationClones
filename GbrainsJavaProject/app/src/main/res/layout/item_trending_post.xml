@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_6sdp"
+    android:background="@color/backgroundBlack"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:orientation="horizontal">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imvThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_weight="2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image_splash"
+            app:riv_corner_radius="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/tvTitleTrendingPost"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="@dimen/_6sdp"
+            android:paddingEnd="0dp"
+            android:textColor="@color/secondPrimary"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            tools:text="Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào!" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDescriptionTrendingPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:lineHeight="@dimen/_18sdp"
+        android:maxLines="4"
+        android:textColor="#9C9898"
+        android:textSize="@dimen/_11ssp"
+        tools:ignore="UnusedAttribute"
+        tools:text="Từ một cậu bé ở vùng quê nghèo nhất thành phố, nơi mọi sự học hành thật là khó khăn, tôi đã cố gắng vươn lên thành phố, tại đây tôi bắt đầu hành trình tìm kiếm đam mê vs Công nghệ thông tin, và tôi đã làm android từ đó Công nghệ thông tin, và tôi đã làm android từ đó" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:background="@color/background" />
+</LinearLayout>
