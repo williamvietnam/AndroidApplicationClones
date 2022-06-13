@@ -13,14 +13,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_toStartOf="@id/tvSeeAll"
+        android:layout_toStartOf="@id/tvCreateQuestion"
         android:text="@string/trending_posts"
         android:textColor="@color/background"
         android:textSize="@dimen/_16ssp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvSeeAll"
+        android:id="@+id/tvCreateQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
