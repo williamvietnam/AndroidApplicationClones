@@ -30,11 +30,7 @@
             android:src="@drawable/image_splash"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvTitleNews"
-            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew"
-            app:sriv_left_bottom_corner_radius="8dp"
-            app:sriv_left_top_corner_radius="8dp"
-            app:sriv_right_bottom_corner_radius="8dp"
-            app:sriv_right_top_corner_radius="8dp" />
+            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew" />
 
 
         <TextView
