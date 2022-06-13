@@ -4,6 +4,26 @@ import com.nbgsoftware.gbrains.baseMVP.MVPPresenter;
 
 public class MainPresenter<V extends MainContract.View> extends MVPPresenter<V> implements MainContract.Presenter<V>{
 
+    @Override
+    public void getDataForBannerFromFirebase() {
+
+    }
+
+    @Override
+    public void getDataForFeaturedQuestionFromFirebase() {
+
+    }
+
+    @Override
+    public void getDataForTrendingPostFromFirebase() {
+
+    }
+
+    @Override
+    public void getDataFromAssetsBanner() {
+        //todo
+    }
+
     /**
      * Sử dụng gson để lấy data từ tệp assets featured_question.json
      * */

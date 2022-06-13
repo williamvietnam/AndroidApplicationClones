@@ -5,8 +5,7 @@
     android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="10dp"
-    app:cardElevation="2dp"
+    app:cardCornerRadius="@dimen/_8sdp"
     app:cardUseCompatPadding="true"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintTop_toTopOf="parent">
@@ -15,23 +14,21 @@
         android:id="@+id/clMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        android:paddingTop="14dp"
-        android:paddingBottom="@dimen/_6sdp">
-
+        android:background="@color/white">
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/imNew"
             android:layout_width="100dp"
             android:layout_height="0dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/image_splash"
+            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvTitleNews"
-            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew" />
-
+            app:riv_corner_radius="@dimen/_8sdp" />
 
         <TextView
             android:id="@+id/tvTitleNews"
@@ -41,73 +38,81 @@
             android:layout_marginEnd="5dp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/primary"
-            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
             app:layout_constraintEnd_toStartOf="@+id/imNew"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tool:text="Thử tướng: tiếc tục giảm giãn cách " />
+            tool:text="Android đã thay đổi cuộc đời của tôi như thế nào" />
 
         <TextView
             android:id="@+id/tvContentNew"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:textSize="@dimen/_11ssp"
-            android:layout_marginTop="@dimen/_6sdp"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#9C9898"
             app:layout_constraintEnd_toStartOf="@+id/imNew"
             app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
             app:layout_constraintTop_toBottomOf="@+id/tvTitleNews"
-            tool:text="Current primary key (PK) restrictions: Currently, entities must have a long or Long property as their primary key. This is recommended practice for Android and SQLite. " />
-
+            tool:text="Cuộc sống này muôn màu muôn vẻ, từ một cậu thanh niên từ quê lên tôi quyết định học và làm việc về android" />
 
         <TextView
+            android:textColor="@color/secondPrimary"
             android:id="@+id/tvTotalShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
-            android:textSize="@dimen/_12ssp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:textSize="@dimen/_13sdp"
+            app:drawableStartCompat="@drawable/ic_share"
             app:layout_constraintEnd_toEndOf="@+id/imNew"
             app:layout_constraintTop_toBottomOf="@+id/tvContentNew"
             tool:text="3"
-            app:drawableStartCompat="@drawable/ic_share" />
+            app:drawableTint="@color/secondPrimary" />
 
         <TextView
+            android:textColor="@color/secondPrimary"
             android:id="@+id/tvTotalView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawablePadding="2dp"
-            android:paddingStart="0dp"
-            android:paddingEnd="@dimen/_10sdp"
-            android:textSize="@dimen/_8ssp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:textSize="@dimen/_13ssp"
+            app:drawableStartCompat="@drawable/ic_view"
             app:layout_constraintEnd_toStartOf="@+id/tvTotalShare"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
             tool:text="3"
-            app:drawableStartCompat="@drawable/ic_view" />
+            app:drawableTint="@color/secondPrimary" />
 
         <TextView
+            android:textStyle="italic"
             android:id="@+id/tvDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingEnd="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
             android:paddingStart="0dp"
-            android:textSize="@dimen/_8ssp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/secondPrimary"
             app:layout_constraintEnd_toStartOf="@+id/tvTotalView"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
             tool:text="6/3/2020" />
 
         <TextView
-            android:id="@+id/tvArticleType"
+            android:textStyle="bold"
+            android:id="@+id/tvTopic"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:paddingStart="0dp"
             android:paddingEnd="@dimen/_6sdp"
             android:textColor="@color/primary"
-            android:textSize="@dimen/_8ssp"
+            android:textSize="@dimen/_12ssp"
             app:layout_constraintEnd_toStartOf="@+id/tvDateTime"
             app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
-            tool:text="Tim mạch" />
+            tool:text="Android" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

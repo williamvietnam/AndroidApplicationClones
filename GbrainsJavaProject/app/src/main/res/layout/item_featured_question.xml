@@ -1,183 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tool="http://schemas.android.com/tools"
-    android:id="@+id/clMain"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:layout_marginRight="8dp"
-    android:layout_marginLeft="8dp"
-    android:paddingHorizontal="@dimen/_11sdp"
-    android:paddingTop="@dimen/_8sdp">
+    android:padding="@dimen/_3sdp">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cvAvatarPatient"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:cardCornerRadius="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tvName">
-
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/ivAvatarPatient"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <!--    <TextView-->
-    <!--        android:id="@+id/tvNamePatient"-->
-    <!--        android:layout_width="0dp"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginStart="16dp"-->
-    <!--        android:paddingEnd="@dimen/dp_10p"-->
-    <!--        android:textAppearance="@style/TextAppearance.Text.Bold"-->
-    <!--        android:textColor="@color/color_text"-->
-    <!--        android:textSize="@dimen/dp_14s"-->
-    <!--        android:textStyle="bold"-->
-    <!--        app:layout_constraintStart_toEndOf="@+id/cvAvatarPatient"-->
-    <!--        app:layout_constraintTop_toTopOf="parent"-->
-    <!--        tool:text="Hoang" />-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_8sdp"
+        tools:src="@drawable/thumbnail_splash" />
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/_11ssp"
-        app:layout_constraintStart_toEndOf="@+id/cvAvatarPatient"
-        app:layout_constraintTop_toTopOf="parent"
-        tool:text="Tim mạch" />
-
-    <TextView
-        android:id="@+id/tvAgePatient"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/_10ssp"
-        app:layout_constraintBottom_toBottomOf="@+id/tvName"
-        app:layout_constraintStart_toEndOf="@+id/tvName"
-        app:layout_constraintTop_toTopOf="@+id/tvName"
-        tool:text="60 tuổi" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout10"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/cvAvatarPatient"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/tvName">
-
-        <TextView
-            android:id="@+id/tvDateQuestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/primary"
-            android:textSize="@dimen/_8ssp"
-            tool:text="Hôm qua" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tvTitleTopic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/_9ssp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout10"
-        tool:text="Tim mạch" />
-
-    <TextView
-        android:id="@+id/tvContentTopic"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toEndOf="@id/ivAvatar"
         android:ellipsize="end"
-        android:maxLines="2"
-        android:textColor="@color/primary"
-        android:textSize="@dimen/_11ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitleTopic"
-        tool:text="Interesting project ideas with source code and reference articles, also attaching some research papers too." />
+        android:maxLines="1"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:text="{William Giang Nguyen}"
+        android:textSize="@dimen/_13ssp" />
 
-
-    <LinearLayout
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/tvTopic"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvContentTopic">
+        android:layout_below="@id/tvName"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@id/ivAvatar"
+        android:ellipsize="end"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:text="{TOPIC}"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/status"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:weightSum="3"
-            tool:visibility="visible">
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAvatar"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="{content content content content content content content content content content content content content content content content content content content content content content content content content content content content content content}"
+        android:textSize="@dimen/_12ssp" />
 
-            <TextView
-                android:id="@+id/tvTotalView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawablePadding="4dp"
-                android:textColor="@color/primary"
-                android:textSize="@dimen/_8ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/tvTotalFollow"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tool:text="20"
-                app:drawableStartCompat="@drawable/ic_view" />
+    <TextView
+        android:id="@+id/tvTotalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/secondPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_view"
+        app:drawableTint="@color/secondPrimary"
+        tools:text="20" />
 
-            <TextView
-                android:id="@+id/tvTotalFollow"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
-                android:drawablePadding="4dp"
-                android:textColor="@color/primary"
-                android:textSize="@dimen/_8ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvTotalView"
-                app:layout_constraintTop_toTopOf="parent"
-                tool:text="20 Theo dõi"
-                app:drawableStartCompat="@drawable/ic_heart" />
+    <TextView
+        android:id="@+id/tvTotalFollow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_toEndOf="@id/tvTotalView"
+        android:drawablePadding="4dp"
+        android:textColor="@color/secondPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_heart"
+        app:drawableTint="@color/secondPrimary"
+        tools:text="20 Theo dõi" />
 
-            <TextView
-                android:id="@+id/tvTotalComment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawablePadding="4dp"
-                android:gravity="right|end"
-                android:textColor="@color/primary"
-                android:textSize="@dimen/_8ssp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tool:text="1 câu trả lời"
-                app:drawableStartCompat="@drawable/ic_reply" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tvTotalComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/secondPrimary"
+        android:textSize="@dimen/_12ssp"
+        app:drawableStartCompat="@drawable/ic_reply"
+        app:drawableTint="@color/secondPrimary"
+        tools:text="1 câu trả lời" />
 
-        <TextView
-            android:id="@+id/tvTopicStatus"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:paddingEnd="0dp"
-            android:paddingStart="5dp"
-            android:textColor="@color/primary"
-            android:textSize="@dimen/_8ssp"
-            tool:text="Đang chờ duyệt"
-            tool:visibility="visible" />
-    </LinearLayout>
+    <View
+        android:id="@+id/viewDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/tvTotalView"
+        android:layout_marginHorizontal="@dimen/_6sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:background="@color/secondPrimary" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

@@ -20,12 +20,22 @@ public interface MainContract {
 
         void openExpandScreen();
 
+        void showBanner();
+
         void showFeaturedQuestions();
 
         void showTrendingPosts();
     }
 
     interface Presenter<V extends View> extends MVPContract.Presenter<V> {
+        void getDataForBannerFromFirebase();
+
+        void getDataForFeaturedQuestionFromFirebase();
+
+        void getDataForTrendingPostFromFirebase();
+
+        void getDataFromAssetsBanner();
+
         void getDataFromAssetsFeaturedQuestion();
 
         void getDataFromAssetsTrendingPost();

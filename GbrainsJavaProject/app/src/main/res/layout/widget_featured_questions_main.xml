@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_trending_posts"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
     android:orientation="vertical"
     android:padding="@dimen/_8sdp">
 
@@ -15,7 +15,7 @@
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@id/tvCreateQuestion"
         android:text="@string/featured_post"
-        android:textColor="@color/background"
+        android:textColor="@color/primary"
         android:textSize="@dimen/_16ssp"
         android:textStyle="bold" />
 
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="@dimen/_3sdp"
-        android:text=""
+        android:text="@string/create_question"
         android:textColor="#9C9898"
         android:textSize="@dimen/_12ssp"
         android:textStyle="italic" />
@@ -33,13 +33,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/tvTitleTrendingPosts"
         android:layout_marginTop="@dimen/_3sdp"
         android:orientation="vertical"
         android:padding="@dimen/_6sdp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:itemCount="3"
+        tools:itemCount="4"
         tools:listitem="@layout/item_featured_question" />
 
 </RelativeLayout>

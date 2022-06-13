@@ -27,15 +27,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp" />
 
-            <include android:id="@+id/trendingPosts"
+            <include
+                android:layout_margin="@dimen/_8sdp"
+                android:id="@+id/trendingPosts"
+                layout="@layout/widget_trending_posts_main"
                 android:layout_width="match_parent"
-                android:layout_margin="@dimen/_12sdp"
-                android:layout_height="wrap_content"
-                layout="@layout/widget_trending_posts_main" />
+                android:layout_height="wrap_content" />
 
-            <include android:id="@+id/copyright"
-                layout="@layout/widget_copyright_main"
-                />
+            <include
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/widget_featured_questions_main" />
+
+            <include
+                android:id="@+id/copyright"
+                layout="@layout/widget_copyright_main" />
         </LinearLayout>
 
     </ScrollView>
@@ -49,5 +56,4 @@
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_marginBottom="@dimen/_24sdp" />
-
 </RelativeLayout>
