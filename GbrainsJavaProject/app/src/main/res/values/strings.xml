@@ -9,4 +9,7 @@
     <string name="trending_posts">Bài viết thịnh hành</string>
     <string name="see_all"><u>Xem tất cả</u></string>
     <string name="ourgbrains">OurGbrains</string>
+    <string name="featured_post">Câu hỏi nổi bật</string>
+    <string name="delete">xoá</string>
+    <string name="create_question">Đặt câu hỏi</string>
 </resources>

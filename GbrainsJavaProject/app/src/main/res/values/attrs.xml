@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomEditText">
+        <attr name="textTitleEditText" format="string"/>
+        <attr name="textHintEditText" format="string"/>
+        <attr name="textUnitEditText" format="string"/>
+        <attr name="showUnit" format="boolean"/>
+        <attr name="showButtonDelete" format="boolean"/>
+        <attr name="textTitleStyleEditText" format="string"/>
+        <attr name="textHintStyleEditText" format="string"/>
+        <attr name="textUnitStyleEditText" format="string"/>
+        <attr name="maxLengthEdiText" format="integer"/>
+        <attr name="inputTypeEditText" format="string"/>
+        <attr name="enableEditText" format="boolean"/>
+    </declare-styleable>
+</resources>

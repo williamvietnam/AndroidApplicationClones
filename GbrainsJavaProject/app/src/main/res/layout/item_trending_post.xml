@@ -1,59 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginVertical="@dimen/_6sdp"
-    android:background="@color/backgroundBlack"
-    android:orientation="vertical">
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardUseCompatPadding="true"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clMain"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_48sdp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/imvThumbnail"
-            android:layout_width="0dp"
-            android:layout_height="@dimen/_48sdp"
-            android:layout_weight="2"
+            android:id="@+id/imNew"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/image_splash"
+            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTitleNews"
             app:riv_corner_radius="@dimen/_8sdp" />
 
         <TextView
-            android:id="@+id/tvTitleTrendingPost"
+            android:id="@+id/tvTitleNews"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
             android:ellipsize="end"
-            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toStartOf="@+id/imNew"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Android đã thay đổi cuộc đời của tôi như thế nào" />
+
+        <TextView
+            android:id="@+id/tvContentNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:ellipsize="end"
             android:maxLines="2"
-            android:paddingStart="@dimen/_6sdp"
-            android:paddingEnd="0dp"
-            android:textColor="@color/secondPrimary"
             android:textSize="@dimen/_13ssp"
+            android:textColor="#9C9898"
+            app:layout_constraintEnd_toStartOf="@+id/imNew"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleNews"
+            tool:text="Cuộc sống này muôn màu muôn vẻ, từ một cậu thanh niên từ quê lên tôi quyết định học và làm việc về android" />
+
+        <TextView
+            android:textColor="@color/secondPrimary"
+            android:id="@+id/tvTotalShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:textSize="@dimen/_13sdp"
+            app:drawableStartCompat="@drawable/ic_share"
+            app:layout_constraintEnd_toEndOf="@+id/imNew"
+            app:layout_constraintTop_toBottomOf="@+id/tvContentNew"
+            tool:text="3"
+            app:drawableTint="@color/secondPrimary" />
+
+        <TextView
+            android:textColor="@color/secondPrimary"
+            android:id="@+id/tvTotalView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:drawablePadding="@dimen/_4sdp"
+            android:textSize="@dimen/_13ssp"
+            app:drawableStartCompat="@drawable/ic_view"
+            app:layout_constraintEnd_toStartOf="@+id/tvTotalShare"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
+            tool:text="3"
+            app:drawableTint="@color/secondPrimary" />
+
+        <TextView
+            android:textStyle="italic"
+            android:id="@+id/tvDateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/secondPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/tvTotalView"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
+            tool:text="6/3/2020" />
+
+        <TextView
             android:textStyle="bold"
-            tools:text="Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào! Android đã thay đổi cuộc đời tôi như thế nào!" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/tvDescriptionTrendingPost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_3sdp"
-        android:ellipsize="end"
-        android:lineHeight="@dimen/_18sdp"
-        android:maxLines="4"
-        android:textColor="#9C9898"
-        android:textSize="@dimen/_11ssp"
-        tools:ignore="UnusedAttribute"
-        tools:text="Từ một cậu bé ở vùng quê nghèo nhất thành phố, nơi mọi sự học hành thật là khó khăn, tôi đã cố gắng vươn lên thành phố, tại đây tôi bắt đầu hành trình tìm kiếm đam mê vs Công nghệ thông tin, và tôi đã làm android từ đó Công nghệ thông tin, và tôi đã làm android từ đó" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginVertical="@dimen/_1sdp"
-        android:background="@color/background" />
-</LinearLayout>
+            android:id="@+id/tvTopic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/_6sdp"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@+id/tvDateTime"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
+            app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
+            tool:text="Android" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
