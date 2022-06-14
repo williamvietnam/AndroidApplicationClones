@@ -4,6 +4,7 @@
         <attr name="textTitleEditText" format="string" />
         <attr name="textHintEditText" format="string" />
         <attr name="textUnitEditText" format="string" />
+        <attr name="showTextErrorEditText" format="boolean"/>
         <attr name="showUnit" format="boolean" />
         <attr name="showButtonDelete" format="boolean" />
         <attr name="textTitleStyleEditText" format="string" />
@@ -31,5 +32,11 @@
 
     <declare-styleable name="CustomToolbar">
         <attr name="textToolbar" format="string" />
+        <attr name="textToolbarSize" format="integer" />
+        <attr name="textToolbarColor" format="integer" />
+        <attr name="showButtonLeft" format="boolean" />
+        <attr name="srcLeft" format="reference" />
+        <attr name="showButtonRight" format="boolean" />
+        <attr name="srcRight" format="integer" />
     </declare-styleable>
 </resources>

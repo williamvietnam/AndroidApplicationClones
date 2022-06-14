@@ -1,11 +1,13 @@
 package com.nbgsoftware.gbrains.ui.signin;
 
-public interface SignInContract {
-    interface View{
+import com.nbgsoftware.gbrains.baseMVP.MVPContract;
 
+public interface SignInContract {
+    interface View extends MVPContract.View {
+        void openMainScreen();
     }
 
-    interface Presenter{
-
+    interface Presenter<V extends View> extends MVPContract.Presenter<V>{
+        void loginSuccessDefault(String account, String password);
     }
 }

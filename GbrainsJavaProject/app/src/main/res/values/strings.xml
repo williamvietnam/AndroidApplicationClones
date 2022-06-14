@@ -13,4 +13,6 @@
     <string name="delete">xoá</string>
     <string name="create_question">Đặt câu hỏi</string>
     <string name="back">back</string>
+    <string name="login">Đăng nhập</string>
+    <string name="dont_have_account"><u>Bạn chưa có tài khoản?</u> <font fgcolor='#C62828'>Đăng ký</font></string>
 </resources>

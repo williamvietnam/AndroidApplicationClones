@@ -38,7 +38,7 @@ public class WelcomeFragment extends MVPFragment<FragmentWelcomeBinding> impleme
         super.onViewCreated(view, savedInstanceState);
         presenter.onViewCreated();
         presenter.getDataFromLocalResource();
-        binding.btnStarted.setOnClickListener(view1 -> findNavController().navigate(R.id.actionToSignIn));
+        binding.btnStarted.setOnClickListener(view1 -> findNavController().navigate(R.id.actionSignUpToSignIn));
     }
 
     @Override

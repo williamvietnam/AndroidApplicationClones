@@ -3,19 +3,53 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_edittext.xml" value="0.248" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_toolbar.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_trending_posts.xml" value="0.2035" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_back.xml" value="0.248" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_community_gbrains.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_course.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_ecommerce.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_indicator.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_list_friend.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_post.xml" value="0.2025" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/thumbnail_welcome_1.xml" value="0.248" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout-v28/item_trending_post.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_container.xml" value="0.2421875" />
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_edittext.xml" value="0.231" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_delete.xml" value="0.269" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_main.xml" value="0.1" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_menu_select.xml" value="0.265234375" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_sign_in.xml" value="0.3546875" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_featured_question.xml" value="0.3546875" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_trending_post.xml" value="0.1" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_button_text.xml" value="0.3546875" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_button_view.xml" value="0.3546875" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_edit_text.xml" value="0.26293436293436295" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_toolbar.xml" value="0.1" />
-        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_toolbar_main.xml" value="0.3546875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_detail_banner.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_detail_featured_question.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_detail_trend_post.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_main.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_notification.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_sign_in.xml" value="0.264" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_splash.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_welcome.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_featured_question.xml" value="0.4" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_featured_question_v2.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_trending_post.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_trending_posts.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_button_view.xml" value="0.180859375" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_edit_text.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_image_view.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_text_view.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_toolbar.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/slide_welcome.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_banner_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_bottom_nav_main.xml" value="0.264" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_copyright_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_featured_questions.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_featured_questions_main.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_menu_nav_main.xml" value="0.181640625" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_toolbar_main.xml" value="0.264" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_trending_posts_main.xml" value="0.264" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_container.xml" value="0.1" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_intro.xml" value="0.3536458333333333" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_main.xml" value="0.3546875" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_sign_in.xml" value="0.3536458333333333" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_sign_up.xml" value="0.3536458333333333" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_splash.xml" value="0.1" />
+        <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_action_main.xml" value="0.3546875" />
       </map>
     </option>
   </component>

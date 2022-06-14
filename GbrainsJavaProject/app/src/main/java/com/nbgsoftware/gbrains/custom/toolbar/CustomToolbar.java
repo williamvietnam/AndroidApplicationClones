@@ -44,15 +44,44 @@ public class CustomToolbar extends LinearLayout {
                     attrs,
                     R.styleable.CustomToolbar, 0, 0);
 
-            setTextToolbar(typedArray);
+//            setUpTextToolbar(typedArray);
+//            setUpButtonLeftToolbar(typedArray);
 
             typedArray.recycle();
         }
     }
 
-    private void setTextToolbar(@NonNull TypedArray typedArray){
+    private void setUpTextToolbar(@NonNull TypedArray typedArray) {
         String textToolbar = typedArray.getString(R.styleable.CustomToolbar_textToolbar);
         binding.tvNameToolbar.setText(textToolbar);
+
+        float textSize = typedArray.getFloat(R.styleable.CustomToolbar_textToolbarSize, com.intuit.ssp.R.dimen._23ssp);
+        binding.tvNameToolbar.setTextSize(textSize);
+
+        int textColor = typedArray.getInt(R.styleable.CustomToolbar_textToolbarColor, R.color.primary);
+        binding.tvNameToolbar.setTextColor(textColor);
+    }
+
+    private void setUpButtonLeftToolbar(@NonNull TypedArray typedArray) {
+        boolean isShowButtonLeft = typedArray.getBoolean(R.styleable.CustomToolbar_showButtonLeft, false);
+        if (isShowButtonLeft) {
+            binding.buttonLeft.setVisibility(VISIBLE);
+        } else {
+            binding.buttonLeft.setVisibility(GONE);
+        }
+
+        int srcLeft = typedArray.getResourceId(R.styleable.CustomToolbar_srcLeft, R.drawable.ic_back);
+        binding.buttonLeft.setImageResource(srcLeft);
+    }
+
+    private void setUpButtonRightToolbar(@NonNull TypedArray typedArray) {
+        boolean isShowButtonRight = typedArray.getBoolean(R.styleable.CustomToolbar_showButtonRight, false);
+        if (isShowButtonRight) {
+            binding.buttonRight.setVisibility(VISIBLE);
+        } else {
+            binding.buttonRight.setVisibility(GONE);
+        }
+
     }
     //----------------------------------------------------------------------------------------------
 
@@ -78,7 +107,7 @@ public class CustomToolbar extends LinearLayout {
         }
     }
 
-    public void setTextToolbar(String textToolbar) {
+    public void setUpTextToolbar(String textToolbar) {
         binding.tvNameToolbar.setText(textToolbar);
     }
 }

@@ -86,6 +86,13 @@ public class CustomEditText extends ConstraintLayout {
         } else {
             binding.tvUnit.setVisibility(GONE);
         }
+
+        boolean isShowTextError = typedArray.getBoolean(R.styleable.CustomEditText_showTextErrorEditText, false);
+        if (isShowTextError) {
+            binding.tvError.setVisibility(VISIBLE);
+        } else {
+            binding.tvError.setVisibility(GONE);
+        }
     }
 
     private void showText(@NonNull TypedArray typedArray) {
@@ -183,7 +190,7 @@ public class CustomEditText extends ConstraintLayout {
         }
     }
 
-    public void textChangeListener(){
+    public void textChangeListener() {
         binding.edtInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -204,7 +211,7 @@ public class CustomEditText extends ConstraintLayout {
         });
     }
 
-    public void showTextUnit(boolean isShow, String text){
+    public void showTextUnit(boolean isShow, String text) {
         if (isShow) {
             binding.tvUnit.setVisibility(VISIBLE);
             binding.tvUnit.setText(text);

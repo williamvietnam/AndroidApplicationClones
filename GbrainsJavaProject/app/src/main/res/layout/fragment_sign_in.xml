@@ -1,9 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_56sdp"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_32ssp"
+        android:textStyle="bold" />
 
+    <com.nbgsoftware.gbrains.custom.view.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_56sdp"
+        app:inputTypeEditText="text"
+        app:showTextErrorEditText="false"
+        app:textHintEditText="Nhập tên đăng nhập"
+        app:textTitleEditText="Tên đăng nhập"
+        app:textTitleStyleEditText="bold" />
 
+    <com.nbgsoftware.gbrains.custom.view.CustomEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:inputTypeEditText="text"
+        app:showTextErrorEditText="false"
+        app:textHintEditText="Nhập mật khẩu"
+        app:textTitleEditText="Mật khẩu"
+        app:textTitleStyleEditText="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:backgroundTint="@color/primary"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="@string/login"
+        android:textColor="@color/background"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:gravity="center_horizontal"
+        android:text="@string/dont_have_account"
+        android:textSize="@dimen/_12ssp" />
 </LinearLayout>
