@@ -12,4 +12,5 @@
     <string name="featured_post">Câu hỏi nổi bật</string>
     <string name="delete">xoá</string>
     <string name="create_question">Đặt câu hỏi</string>
+    <string name="back">back</string>
 </resources>

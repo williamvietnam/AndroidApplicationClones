@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.customview.editText;
+package com.nbgsoftware.gbrains.custom.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -60,6 +60,8 @@ public class CustomEditText extends ConstraintLayout {
             maxLength(typedArray);
             inputType(typedArray);
             enableEditText(typedArray);
+
+            typedArray.recycle();
         }
 
         binding.layoutEditText.setOnClickListener(view -> {
@@ -158,6 +160,7 @@ public class CustomEditText extends ConstraintLayout {
         boolean isEnableEditText = typedArray.getBoolean(R.styleable.CustomEditText_enableEditText, true);
         binding.edtInput.setEnabled(isEnableEditText);
     }
+
     //----------------------------------------------------------------------------------------------
 
     public void setText(CharSequence text) {

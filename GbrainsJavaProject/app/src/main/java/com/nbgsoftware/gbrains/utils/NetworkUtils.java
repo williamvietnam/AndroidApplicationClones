@@ -10,10 +10,6 @@ import android.net.NetworkInfo;
 
 import androidx.annotation.NonNull;
 
-/**
- * Created by HoangDH 26/05/2020.
- */
-
 public final class NetworkUtils {
 
     private NetworkUtils() {

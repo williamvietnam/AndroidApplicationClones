@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_32sdp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/buttonLeft"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_weight="1"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/tvNameToolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_weight="6"
+        android:gravity="start"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:textSize="@dimen/_24ssp"
+        android:textStyle="bold"
+        tools:text="{name toolbar}" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvRight"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+        <ImageView
+            android:id="@+id/buttonRight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            tools:src="@drawable/ic_menu_select" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
