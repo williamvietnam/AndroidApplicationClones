@@ -64,7 +64,7 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
 
     @Override
     public void openMainScreen() {
-        findNavController().navigate(R.id.actionSignInToMain);
+        findNavController().navigate(R.id.actionSplashToMain);
     }
 
     @Override
@@ -74,6 +74,6 @@ public class SplashFragment extends MVPFragment<FragmentSplashBinding> implement
 
     @Override
     public void openSignInScreen() {
-
+        findNavController().navigate(R.id.actionSplashToSignIn);
     }
 }

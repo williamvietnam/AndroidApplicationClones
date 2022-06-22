@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/_56sdp"
+        android:fontFamily="@font/ubuntu_bold"
         android:gravity="center"
         android:text="@string/login"
         android:textColor="@color/primary"
@@ -18,6 +19,7 @@
         android:textStyle="bold" />
 
     <com.nbgsoftware.gbrains.custom.view.CustomEditText
+        android:id="@+id/edtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_16sdp"
@@ -29,17 +31,19 @@
         app:textTitleStyleEditText="bold" />
 
     <com.nbgsoftware.gbrains.custom.view.CustomEditText
+        android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_8sdp"
-        app:inputTypeEditText="text"
+        app:inputTypeEditText="textPassword"
         app:showTextErrorEditText="false"
         app:textHintEditText="Nhập mật khẩu"
         app:textTitleEditText="Mật khẩu"
         app:textTitleStyleEditText="bold" />
 
     <Button
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_32sdp"
@@ -52,6 +56,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

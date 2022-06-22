@@ -2,63 +2,63 @@
   "featured_question": [
     {
       "id": 1,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
+      "avatar": "https://w7.pngwing.com/pngs/296/534/png-transparent-robot-cute-robot-blue-electronics-humanoid-robot-thumbnail.png",
+      "user_name": "google.dev",
+      "topic": "Android",
+      "content": "How to create RecyclerView with multiple view types",
       "total_view": 123456,
-      "total_follow": 828,
-      "total_answer": 50
+      "total_follow": 10256,
+      "total_answer": 3
     },
     {
       "id": 2,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
-      "total_view": 123456,
+      "avatar": "https://w7.pngwing.com/pngs/939/985/png-transparent-gray-robot-cute-robot-model-robot-s-computer-wallpaper-cartoon-cute-robot-thumbnail.png",
+      "user_name": "facebook.dev",
+      "topic": "Software",
+      "content": "What is the best way to persist state in composable recreation in Jetpack Compose?",
+      "total_view": 76556,
       "total_follow": 828,
-      "total_answer": 50
+      "total_answer": 5
     },
     {
       "id": 3,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
-      "total_view": 123456,
-      "total_follow": 828,
-      "total_answer": 50
+      "avatar": "https://e7.pngegg.com/pngimages/109/189/png-clipart-robot-cartoon-s-of-people-talking-cartoon-robot-kit-thumbnail.png",
+      "user_name": "tesla.dev",
+      "topic": "iOS",
+      "content": "Automatic Provisioning Failed, please check the logs when trying to select auto provisioning from VS 2022",
+      "total_view": 23432432,
+      "total_follow": 123,
+      "total_answer": 7
     },
     {
       "id": 4,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
-      "total_view": 123456,
-      "total_follow": 828,
-      "total_answer": 50
+      "avatar": "https://w7.pngwing.com/pngs/296/534/png-transparent-robot-cute-robot-blue-electronics-humanoid-robot-thumbnail.png",
+      "user_name": "alibaba.dev",
+      "topic": "Web",
+      "content": "How do you disable browser autocomplete on web form field / input tags?",
+      "total_view": 234234,
+      "total_follow": 1132,
+      "total_answer": 8
     },
     {
       "id": 5,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
-      "total_view": 123456,
-      "total_follow": 828,
-      "total_answer": 50
+      "avatar": "https://e7.pngegg.com/pngimages/109/189/png-clipart-robot-cartoon-s-of-people-talking-cartoon-robot-kit-thumbnail.png",
+      "user_name": "amazon.dev",
+      "topic": "Backend",
+      "content": "The backend version is not supported to design database diagrams or tables",
+      "total_view": 234324,
+      "total_follow": 234,
+      "total_answer": 1
     },
     {
       "id": 6,
-      "avatar": " ",
-      "user_name": "",
-      "topic": "",
-      "content": "",
-      "total_view": 123456,
-      "total_follow": 828,
-      "total_answer": 50
+      "avatar": "https://e7.pngegg.com/pngimages/109/189/png-clipart-robot-cartoon-s-of-people-talking-cartoon-robot-kit-thumbnail.png",
+      "user_name": "spacex.dev",
+      "topic": "API",
+      "content": "Returning dict in api response as json somehow removes spaces from values",
+      "total_view": 34543,
+      "total_follow": 543,
+      "total_answer": 23
     }
   ]
 }

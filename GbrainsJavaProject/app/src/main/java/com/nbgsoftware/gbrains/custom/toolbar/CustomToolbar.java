@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -14,8 +15,10 @@ import com.nbgsoftware.gbrains.databinding.LayoutCustomToolbarBinding;
 
 public class CustomToolbar extends LinearLayout {
 
-    private LayoutCustomToolbarBinding binding;
     private Context context;
+    private LayoutCustomToolbarBinding binding;
+    private IOnIconLeftClick iLeftClick;
+    private IOnIconRightClick iRightClick;
 
     public CustomToolbar(Context context) {
         super(context);
@@ -33,19 +36,38 @@ public class CustomToolbar extends LinearLayout {
     }
 
     private void initialize(Context context, AttributeSet attrs) {
+        this.context = context;
         binding = LayoutCustomToolbarBinding.inflate(
                 LayoutInflater.from(context),
                 this,
                 true);
 
+        binding.buttonLeft.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                if (iLeftClick!= null){
+                    iLeftClick.onIconLeftClick();
+                }
+            }
+        });
+
+        binding.buttonRight.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                if (iRightClick != null){
+                    iRightClick.onIconRightClick();
+                }
+            }
+        });
+
         if (attrs != null) {
-            this.context = context;
             final TypedArray typedArray = context.getTheme().obtainStyledAttributes(
                     attrs,
                     R.styleable.CustomToolbar, 0, 0);
 
-//            setUpTextToolbar(typedArray);
-//            setUpButtonLeftToolbar(typedArray);
+            setUpTextToolbar(typedArray);
+            setUpButtonLeftToolbar(typedArray);
+            setUpButtonRightToolbar(typedArray);
 
             typedArray.recycle();
         }
@@ -109,5 +131,13 @@ public class CustomToolbar extends LinearLayout {
 
     public void setUpTextToolbar(String textToolbar) {
         binding.tvNameToolbar.setText(textToolbar);
+    }
+
+    public interface IOnIconRightClick {
+        void onIconRightClick();
+    }
+
+    public interface IOnIconLeftClick {
+        void onIconLeftClick();
     }
 }

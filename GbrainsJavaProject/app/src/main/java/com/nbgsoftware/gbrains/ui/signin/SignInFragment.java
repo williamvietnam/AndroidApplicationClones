@@ -24,7 +24,33 @@ public class SignInFragment extends MVPFragment<FragmentSignInBinding> implement
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        presenter.onViewCreated();
 
+        login();
+        openSignUpScreen();
+    }
+
+    private void login() {
+        binding.buttonLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String userName = binding.edtUserName.getText();
+                String password = binding.edtPassword.getText();
+                if (userName.equals("admin") && password.equals("123")) {
+                    findNavController().navigate(R.id.actionSignInToMain);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void openSignUpScreen() {
+        binding.buttonRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController().navigate(R.id.actionSignInToSignUp);
+            }
+        });
     }
 
     @Override

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/layoutEditText"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/_56sdp"
     android:background="@color/background">
 
     <EditText
@@ -36,6 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
+        android:paddingTop="@dimen/_8sdp"
         android:id="@+id/btnDelete"
         android:layout_width="@dimen/_28sdp"
         android:layout_height="match_parent"
@@ -49,13 +50,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:paddingTop="@dimen/_8sdp"
         android:id="@+id/tvUnit"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_marginEnd="@dimen/_6sdp"
         android:gravity="center"
         android:text="{unit}"
-        android:visibility="gone"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,6 +70,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/edtInput" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

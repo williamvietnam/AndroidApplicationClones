@@ -2,15 +2,22 @@ package com.nbgsoftware.gbrains.ui.signin;
 
 import com.nbgsoftware.gbrains.baseMVP.MVPPresenter;
 
+import java.util.Objects;
+
 public class SignInPresenter<V extends SignInContract.View>
         extends MVPPresenter<V> implements SignInContract.Presenter<V> {
 
     @Override
     public void loginSuccessDefault(String account, String password) {
-        if (account.equals("admin") && password.equals("123")) {
-            getView().openMainScreen();
-        } else {
-            getView().showMessage("Tài khoản: admin\nMật khẩu: 123");
+        if ((Objects.equals(account, "admin")) && (Objects.equals(password, "123"))) {
+            if (getView() != null) {
+                getView().openMainScreen();
+            }
         }
+    }
+
+    @Override
+    public void login(String account, String password) {
+
     }
 }

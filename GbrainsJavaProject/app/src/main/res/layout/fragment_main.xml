@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:background="@color/background">
 
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent"/>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -28,17 +33,18 @@
                 android:layout_marginTop="@dimen/_16sdp" />
 
             <include
-                android:layout_margin="@dimen/_8sdp"
                 android:id="@+id/trendingPosts"
                 layout="@layout/widget_trending_posts_main"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp" />
 
             <include
-                android:layout_margin="@dimen/_8sdp"
+                android:id="@+id/featuredQuestions"
+                layout="@layout/widget_featured_questions_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                layout="@layout/widget_featured_questions_main" />
+                android:layout_margin="@dimen/_8sdp" />
 
             <include
                 android:id="@+id/copyright"
