@@ -1,7 +1,5 @@
 package com.nbgsoftware.gbrains.ui.splash;
 
-import android.graphics.Bitmap;
-
 import com.nbgsoftware.gbrains.baseMVP.MVPContract;
 import com.nbgsoftware.gbrains.data.models.Splash;
 

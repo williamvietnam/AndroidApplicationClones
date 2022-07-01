@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.data.models.Welcome;
 import com.nbgsoftware.gbrains.data.models.response.WelcomeResponse;
 import com.nbgsoftware.gbrains.databinding.SlideWelcomeBinding;

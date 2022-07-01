@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.customview.editText;
+package com.nbgsoftware.gbrains.custom.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -60,6 +60,8 @@ public class CustomEditText extends ConstraintLayout {
             maxLength(typedArray);
             inputType(typedArray);
             enableEditText(typedArray);
+
+            typedArray.recycle();
         }
 
         binding.layoutEditText.setOnClickListener(view -> {
@@ -83,6 +85,13 @@ public class CustomEditText extends ConstraintLayout {
             binding.tvUnit.setVisibility(VISIBLE);
         } else {
             binding.tvUnit.setVisibility(GONE);
+        }
+
+        boolean isShowTextError = typedArray.getBoolean(R.styleable.CustomEditText_showTextErrorEditText, false);
+        if (isShowTextError) {
+            binding.tvError.setVisibility(VISIBLE);
+        } else {
+            binding.tvError.setVisibility(GONE);
         }
     }
 
@@ -158,6 +167,7 @@ public class CustomEditText extends ConstraintLayout {
         boolean isEnableEditText = typedArray.getBoolean(R.styleable.CustomEditText_enableEditText, true);
         binding.edtInput.setEnabled(isEnableEditText);
     }
+
     //----------------------------------------------------------------------------------------------
 
     public void setText(CharSequence text) {
@@ -180,7 +190,7 @@ public class CustomEditText extends ConstraintLayout {
         }
     }
 
-    public void textChangeListener(){
+    public void textChangeListener() {
         binding.edtInput.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -201,7 +211,7 @@ public class CustomEditText extends ConstraintLayout {
         });
     }
 
-    public void showTextUnit(boolean isShow, String text){
+    public void showTextUnit(boolean isShow, String text) {
         if (isShow) {
             binding.tvUnit.setVisibility(VISIBLE);
             binding.tvUnit.setText(text);

@@ -9,7 +9,9 @@ public class SplashPresenter<V extends SplashContract.View>
 
     @Override
     public void getData() {
-        Splash splash = new Splash(R.drawable.thumbnail_splash, "Cộng đồng Gbrains", "Cùng nhau học tập và chia sẻ kiến thức");
+        Splash splash = new Splash(R.drawable.thumbnail_splash,
+                "Cộng đồng Gbrains",
+                "Cùng nhau học tập và chia sẻ kiến thức");
         if (getView() != null) {
             getView().showData(splash);
         }
