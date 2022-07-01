@@ -1,14 +1,9 @@
 package com.nbgsoftware.gbrains.ui.main;
 
-import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import com.nbgsoftware.gbrains.baseMVP.MVPFragment;
+import com.nbgsoftware.gbrains.baseMVP.MVPFragmentPresenter;
 import com.nbgsoftware.gbrains.data.models.FeaturedQuestion;
 import com.nbgsoftware.gbrains.data.models.TrendPost;
 import com.nbgsoftware.gbrains.data.models.response.FeaturedQuestionResponse;
@@ -23,24 +18,28 @@ import java.util.List;
 /**
  * Author: William Giang Nguyen | Date 12/06/2022
  */
-public class MainFragment extends MVPFragment<FragmentMainBinding> implements MainContract.View {
-
-    MainContract.Presenter<MainContract.View> presenter = new MainPresenter<>();
+public class MainFragment extends MVPFragmentPresenter<
+        FragmentMainBinding,
+        MainContract.View,
+        MainContract.Presenter<MainContract.View>>
+        implements MainContract.View {
 
     private BannerAdapter bannerAdapter;
     private TrendingPostAdapter trendingPostAdapter;
     private FeaturedQuestionAdapter featuredQuestionAdapter;
 
     @Override
-    public FragmentMainBinding createViewBinding(LayoutInflater inflater, ViewGroup container) {
+    public FragmentMainBinding getViewBinding(LayoutInflater inflater, ViewGroup container) {
         return FragmentMainBinding.inflate(inflater, container, false);
     }
 
     @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        presenter.onViewCreated();
+    public MainContract.Presenter<MainContract.View> getPresenter() {
+        return new MainPresenter<>();
+    }
 
+    @Override
+    public void initialize() {
         presenter.getDataFromAssetsBanner(requireContext());
         presenter.getDataFromAssetsTrendingPost(requireContext());
         presenter.getDataFromAssetsFeaturedQuestion(requireContext());
@@ -104,4 +103,5 @@ public class MainFragment extends MVPFragment<FragmentMainBinding> implements Ma
         trendingPostAdapter = new TrendingPostAdapter(trendPostList, requireContext());
         binding.trendingPosts.rcv.setAdapter(trendingPostAdapter);
     }
+
 }

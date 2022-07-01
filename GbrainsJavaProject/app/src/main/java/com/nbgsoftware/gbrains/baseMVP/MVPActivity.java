@@ -13,7 +13,7 @@ import androidx.viewbinding.ViewBinding;
 import com.nbgsoftware.gbrains.utils.NetworkUtils;
 
 public abstract class MVPActivity<VB extends ViewBinding>
-        extends AppCompatActivity implements MVPContract.View {
+        extends AppCompatActivity implements BaseActivityView {
 
     public VB binding;
 
@@ -23,12 +23,6 @@ public abstract class MVPActivity<VB extends ViewBinding>
 
         binding = getActivityBinding();
         setContentView(binding.getRoot());
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        binding = null;
     }
 
     @Override

@@ -35,19 +35,6 @@ public class MainPresenter<V extends MainContract.View>
     }
 
     /**
-     * Sử dụng gson để lấy data từ tệp assets featured_question.json
-     */
-    @Override
-    public void getDataFromAssetsFeaturedQuestion(Context context) {
-        if (getView() != null) {
-            String json = Utils.getJsonFromAssets("featured_question.json", context);
-            Gson gson = new Gson();
-            FeaturedQuestionResponse response = gson.fromJson(json, FeaturedQuestionResponse.class);
-            getView().showFeaturedQuestions(response);
-        }
-    }
-
-    /**
      * Sử dụng gson để lấy data từ tệp assets trending_post.json
      */
     @Override
@@ -57,6 +44,19 @@ public class MainPresenter<V extends MainContract.View>
             Gson gson = new Gson();
             TrendPostResponse response = gson.fromJson(json, TrendPostResponse.class);
             getView().showTrendingPosts(response);
+        }
+    }
+
+    /**
+     * Sử dụng gson để lấy data từ tệp assets featured_question.json
+     */
+    @Override
+    public void getDataFromAssetsFeaturedQuestion(Context context) {
+        if (getView() != null) {
+            String json = Utils.getJsonFromAssets("featured_question.json", context);
+            Gson gson = new Gson();
+            FeaturedQuestionResponse response = gson.fromJson(json, FeaturedQuestionResponse.class);
+            getView().showFeaturedQuestions(response);
         }
     }
 }

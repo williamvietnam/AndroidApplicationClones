@@ -3,7 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_edittext.xml" value="0.248" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_delete.xml" value="0.2035" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_container.xml" value="0.10104166666666667" />
         <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/fragment_main.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/item_trending_post.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/layout_custom_edit_text.xml" value="0.2421875" />
+        <entry key="..\:/GbrainsProjects/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/layout/widget_featured_questions_main.xml" value="0.2421875" />
         <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/background_edittext.xml" value="0.231" />
         <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_back.xml" value="0.3325" />
         <entry key="..\:/MyGithub/GbrainsAndroidApp/GbrainsJavaProject/app/src/main/res/drawable/ic_delete.xml" value="0.269" />
