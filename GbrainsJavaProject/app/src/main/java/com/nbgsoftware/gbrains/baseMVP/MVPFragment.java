@@ -22,14 +22,20 @@ public abstract class MVPFragment<VB extends ViewBinding> extends Fragment imple
     public View onCreateView(@NonNull LayoutInflater inflater,
                              @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        binding = createViewBinding(inflater, container);
+        binding = getViewBinding(inflater, container);
         return binding.getRoot();
     }
 
     @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        initialize();
+    }
+
+    @Override
     public void onDestroyView() {
-        super.onDestroyView();
         binding = null;
+        super.onDestroyView();
     }
 
     public NavController findNavController() {
@@ -73,5 +79,5 @@ public abstract class MVPFragment<VB extends ViewBinding> extends Fragment imple
         return activity;
     }
 
-    public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
+    public abstract VB getViewBinding(LayoutInflater inflater, ViewGroup container);
 }

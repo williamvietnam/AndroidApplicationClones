@@ -83,7 +83,7 @@
         tools:text="20 Theo dõi" />
 
     <TextView
-        android:id="@+id/tvTotalComment"
+        android:id="@+id/tvTotalAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvQuestion"

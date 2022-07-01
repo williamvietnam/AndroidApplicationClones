@@ -17,7 +17,7 @@
         android:background="@color/white">
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/imNew"
+            android:id="@+id/imNews"
             android:layout_width="100dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/_3sdp"
@@ -25,7 +25,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
             android:src="@drawable/image_splash"
-            app:layout_constraintBottom_toBottomOf="@+id/tvContentNew"
+            app:layout_constraintBottom_toBottomOf="@+id/tvContentNews"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/tvTitleNews"
             app:riv_corner_radius="@dimen/_8sdp" />
@@ -40,69 +40,68 @@
             android:maxLines="1"
             android:textColor="@color/black"
             android:textSize="@dimen/_15ssp"
-            app:layout_constraintEnd_toStartOf="@+id/imNew"
+            app:layout_constraintEnd_toStartOf="@+id/imNews"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tool:text="Android đã thay đổi cuộc đời của tôi như thế nào" />
 
         <TextView
-            android:id="@+id/tvContentNew"
+            android:id="@+id/tvContentNews"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:ellipsize="end"
             android:maxLines="2"
-            android:textSize="@dimen/_13ssp"
             android:textColor="#9C9898"
-            app:layout_constraintEnd_toStartOf="@+id/imNew"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toStartOf="@+id/imNews"
             app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
             app:layout_constraintTop_toBottomOf="@+id/tvTitleNews"
             tool:text="Cuộc sống này muôn màu muôn vẻ, từ một cậu thanh niên từ quê lên tôi quyết định học và làm việc về android" />
 
         <TextView
-            android:textColor="@color/secondPrimary"
             android:id="@+id/tvTotalShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_6sdp"
             android:drawablePadding="@dimen/_4sdp"
+            android:textColor="@color/secondPrimary"
             android:textSize="@dimen/_13sdp"
             app:drawableStartCompat="@drawable/ic_share"
-            app:layout_constraintEnd_toEndOf="@+id/imNew"
-            app:layout_constraintTop_toBottomOf="@+id/tvContentNew"
-            tool:text="3"
-            app:drawableTint="@color/secondPrimary" />
+            app:drawableTint="@color/secondPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/imNews"
+            app:layout_constraintTop_toBottomOf="@+id/tvContentNews"
+            tool:text="3" />
 
         <TextView
-            android:textColor="@color/secondPrimary"
             android:id="@+id/tvTotalView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_14sdp"
             android:drawablePadding="@dimen/_4sdp"
+            android:textColor="@color/secondPrimary"
             android:textSize="@dimen/_13ssp"
             app:drawableStartCompat="@drawable/ic_view"
+            app:drawableTint="@color/secondPrimary"
             app:layout_constraintEnd_toStartOf="@+id/tvTotalShare"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
-            tool:text="3"
-            app:drawableTint="@color/secondPrimary" />
+            tool:text="3" />
 
         <TextView
-            android:textStyle="italic"
             android:id="@+id/tvDateTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_8sdp"
             android:paddingStart="0dp"
             android:paddingEnd="@dimen/_8sdp"
-            android:textSize="@dimen/_11ssp"
             android:textColor="@color/secondPrimary"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="italic"
             app:layout_constraintEnd_toStartOf="@+id/tvTotalView"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"
             tool:text="6/3/2020" />
 
         <TextView
-            android:textStyle="bold"
             android:id="@+id/tvTopic"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -110,6 +109,7 @@
             android:paddingEnd="@dimen/_6sdp"
             android:textColor="@color/primary"
             android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/tvDateTime"
             app:layout_constraintStart_toStartOf="@+id/tvTitleNews"
             app:layout_constraintTop_toTopOf="@+id/tvTotalShare"

@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.customview.imageView;
+package com.nbgsoftware.gbrains.custom.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

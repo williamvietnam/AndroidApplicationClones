@@ -9,4 +9,5 @@ public class ContainerActivity extends MVPActivity<ActivityContainerBinding> {
     protected ActivityContainerBinding getActivityBinding() {
         return ActivityContainerBinding.inflate(getLayoutInflater());
     }
+
 }

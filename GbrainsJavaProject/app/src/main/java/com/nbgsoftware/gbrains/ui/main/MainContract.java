@@ -1,6 +1,10 @@
 package com.nbgsoftware.gbrains.ui.main;
 
+import android.content.Context;
+
 import com.nbgsoftware.gbrains.baseMVP.MVPContract;
+import com.nbgsoftware.gbrains.data.models.response.FeaturedQuestionResponse;
+import com.nbgsoftware.gbrains.data.models.response.TrendPostResponse;
 
 public interface MainContract {
     interface View extends MVPContract.View {
@@ -22,9 +26,9 @@ public interface MainContract {
 
         void showBanner();
 
-        void showFeaturedQuestions();
+        void showFeaturedQuestions(FeaturedQuestionResponse response);
 
-        void showTrendingPosts();
+        void showTrendingPosts(TrendPostResponse response);
     }
 
     interface Presenter<V extends View> extends MVPContract.Presenter<V> {
@@ -34,10 +38,10 @@ public interface MainContract {
 
         void getDataForTrendingPostFromFirebase();
 
-        void getDataFromAssetsBanner();
+        void getDataFromAssetsBanner(Context context);
 
-        void getDataFromAssetsFeaturedQuestion();
+        void getDataFromAssetsFeaturedQuestion(Context context);
 
-        void getDataFromAssetsTrendingPost();
+        void getDataFromAssetsTrendingPost(Context context);
     }
 }

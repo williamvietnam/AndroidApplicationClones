@@ -1,31 +1,30 @@
 package com.nbgsoftware.gbrains.baseMVP;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
 import androidx.viewbinding.ViewBinding;
 
-public abstract class MVPFragmentPresenter<VB extends ViewBinding, P extends MVPContract.Presenter<MVPContract.View>>
-        extends Fragment implements MVPContract.View {
+public abstract class MVPFragmentPresenter<
+        VB extends ViewBinding,
+        V extends MVPContract.View,
+        P extends MVPContract.Presenter<V>>
+        extends MVPFragment<VB> implements MVPContract.View {
 
-    public VB binding;
-    public P presenter = createPresenter();
+    public P presenter;
 
-    @Nullable
+    public abstract P getPresenter();
+
+    @SuppressWarnings("unchecked")
+    @CallSuper
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        binding = createViewBinding(inflater, container);
-        return binding.getRoot();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (presenter == null){
+            presenter = getPresenter();
+        }
+        getLifecycle().addObserver(presenter);
+        presenter.attachView((V) this);
     }
-
-    public abstract P createPresenter();
-
-    public abstract VB createViewBinding(LayoutInflater inflater, ViewGroup container);
 }

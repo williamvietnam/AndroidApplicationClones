@@ -12,4 +12,10 @@
     <string name="featured_post">Câu hỏi nổi bật</string>
     <string name="delete">xoá</string>
     <string name="create_question">Đặt câu hỏi</string>
+    <string name="back">back</string>
+    <string name="login">Đăng nhập</string>
+    <string name="dont_have_account"><u>Bạn chưa có tài khoản?</u> <font fgcolor='#C62828'>Đăng ký</font></string>
+    <string name="have_account"><u>Bạn đã có tài khoản?</u> <font fgcolor='#C62828'> Đăng nhập </font></string>
+    <string name="register">Đăng ký</string>
+    <string name="new_account">Tạo tài khoản mới</string>
 </resources>

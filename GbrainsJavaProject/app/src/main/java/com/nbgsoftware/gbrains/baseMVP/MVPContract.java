@@ -1,9 +1,12 @@
 package com.nbgsoftware.gbrains.baseMVP;
 
 import androidx.annotation.StringRes;
+import androidx.lifecycle.LifecycleObserver;
 
 public interface MVPContract {
     interface View {
+        void initialize();
+
         void showMessage(String message);
 
         void showMessage(@StringRes int resId);
@@ -13,11 +16,15 @@ public interface MVPContract {
         void hideKeyboard();
     }
 
-    interface Presenter<V extends View> {
-        void onAttach(V view);
+    interface Presenter<V extends View> extends LifecycleObserver {
+        void attachView(V view);
 
-        void onViewCreated();
+        boolean isViewAttached();
 
-        void onDestroy();
+        V getView();
+
+        void onCreateScreen();
+
+        void onDestroyScreen();
     }
 }
