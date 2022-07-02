@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.utils
+package com.nbgsoftware.gbrains.utilities
 
 import android.util.Log
 import androidx.annotation.MainThread

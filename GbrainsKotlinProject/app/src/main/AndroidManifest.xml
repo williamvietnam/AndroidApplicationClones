@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/thumbnail_splash_v2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/thumbnail_splash_v2"
         android:supportsRtl="true"
         android:theme="@style/Theme.GbrainsKotlinProject">
         <activity

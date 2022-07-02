@@ -14,13 +14,13 @@ import com.zeugmasolutions.localehelper.LocaleHelperActivityDelegate
 import com.zeugmasolutions.localehelper.LocaleHelperActivityDelegateImpl
 import java.util.*
 
-abstract class MVVMActivity<DB : ViewDataBinding> : AppCompatActivity(), MVVMActivityView {
+abstract class MVVMActivity<DB : ViewDataBinding> : AppCompatActivity() {
 
     private val localeDelegate: LocaleHelperActivityDelegate = LocaleHelperActivityDelegateImpl()
 
     private var _binding: DB? = null
     open val binding get() = _binding!!
-    lateinit var navController: LiveData<NavController>
+//    lateinit var navController: LiveData<NavController>
 
     @LayoutRes
     abstract fun getLayoutId(): Int
@@ -30,13 +30,11 @@ abstract class MVVMActivity<DB : ViewDataBinding> : AppCompatActivity(), MVVMAct
         initializeDataBinding()
         setContentView(binding.root)
 
+        initializeView()
+
         if (savedInstanceState == null) {
             setUpBottomNavigation()
         }
-
-        initializeComponent()
-        initializeEvent()
-        initializeData()
     }
 
     override fun onResume() {
@@ -70,9 +68,9 @@ abstract class MVVMActivity<DB : ViewDataBinding> : AppCompatActivity(), MVVMAct
         binding.executePendingBindings()
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.value?.navigateUp()!! || super.onSupportNavigateUp()
-    }
+//    override fun onSupportNavigateUp(): Boolean {
+//        return navController.value?.navigateUp()!! || super.onSupportNavigateUp()
+//    }
 
     open fun updateLocale(language: String) {
         localeDelegate.setLocale(this, Locale(language))
@@ -81,4 +79,6 @@ abstract class MVVMActivity<DB : ViewDataBinding> : AppCompatActivity(), MVVMAct
     override fun getDelegate() = localeDelegate.getAppCompatDelegate(super.getDelegate())
 
     open fun setUpBottomNavigation() {}
+
+    open fun initializeView(){}
 }

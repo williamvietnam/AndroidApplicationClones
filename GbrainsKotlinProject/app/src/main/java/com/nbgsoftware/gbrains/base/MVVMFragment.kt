@@ -9,8 +9,8 @@ import androidx.annotation.LayoutRes
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
-import com.nbgsoftware.gbrains.utils.hideLoadingDialog
-import com.nbgsoftware.gbrains.utils.showLoadingDialog
+import com.nbgsoftware.gbrains.utilities.hideLoadingDialog
+import com.nbgsoftware.gbrains.utilities.showLoadingDialog
 import java.util.*
 
 abstract class MVVMFragment<DB : ViewDataBinding> : Fragment() {
