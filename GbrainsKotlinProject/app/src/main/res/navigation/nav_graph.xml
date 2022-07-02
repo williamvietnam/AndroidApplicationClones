@@ -9,7 +9,16 @@
         android:id="@+id/splashFragment"
         android:name="com.nbgsoftware.gbrains.ui.splash.SplashFragment"
         android:label="splashFragment"
-        tools:layout="@layout/fragment_splash" />
+        tools:layout="@layout/fragment_splash">
 
+        <action
+            android:id="@+id/actionSplashToMain"
+            app:destination="@id/mainFragment" />
+    </fragment>
 
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nbgsoftware.gbrains.ui.main.MainFragment"
+        android:label="mainFragment"
+        tools:layout="@layout/fragment_main" />
 </navigation>

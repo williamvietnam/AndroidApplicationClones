@@ -10,13 +10,15 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 
 abstract class MVVMFragmentViewModel<DB : ViewDataBinding, VM : MVVMViewModel> : Fragment() {
 
     @LayoutRes
     abstract fun getLayoutId(): Int
     private var _binding: DB? = null
-    private val binding get() = _binding!!
+    val binding get() = _binding!!
     private var rootView: View? = null
 
     open var useSharedViewModel: Boolean = false
@@ -79,6 +81,10 @@ abstract class MVVMFragmentViewModel<DB : ViewDataBinding, VM : MVVMViewModel> :
         binding.lifecycleOwner = this
         binding.executePendingBindings()
     }
+
+//    fun findNavController(): NavController {
+//        return Navigation.findNavController(binding.root)
+//    }
 
     open fun registerListener() {}
 

@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains.utils
+package com.nbgsoftware.gbrains.utilities
 
 import android.annotation.SuppressLint
 import android.app.Activity

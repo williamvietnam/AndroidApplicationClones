@@ -1,4 +1,7 @@
 package com.nbgsoftware.gbrains.ui.main
 
-class MainViewModel {
+import com.nbgsoftware.gbrains.base.MVVMViewModel
+
+class MainViewModel:MVVMViewModel() {
+
 }
