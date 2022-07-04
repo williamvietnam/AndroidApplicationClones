@@ -6,7 +6,7 @@ import com.nbgsoftware.gbrains.databinding.ActivityContainerBinding;
 public class ContainerActivity extends MVPActivity<ActivityContainerBinding> {
 
     @Override
-    protected ActivityContainerBinding getActivityBinding() {
+    public ActivityContainerBinding getActivityBinding() {
         return ActivityContainerBinding.inflate(getLayoutInflater());
     }
 

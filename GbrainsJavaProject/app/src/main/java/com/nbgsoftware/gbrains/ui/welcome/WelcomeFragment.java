@@ -1,16 +1,19 @@
 package com.nbgsoftware.gbrains.ui.welcome;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.Nullable;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.baseMVP.MVPFragmentPresenter;
 import com.nbgsoftware.gbrains.data.models.response.WelcomeResponse;
 import com.nbgsoftware.gbrains.databinding.FragmentWelcomeBinding;
+import com.nbgsoftware.gbrains.di.component.ActivityComponent;
 
 public class WelcomeFragment extends MVPFragmentPresenter<
         FragmentWelcomeBinding,
@@ -27,9 +30,19 @@ public class WelcomeFragment extends MVPFragmentPresenter<
     }
 
     @Override
-    public WelcomeContract.Presenter<WelcomeContract.View> getPresenter() {
-        return new WelcomePresenter<>();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ActivityComponent component = getActivityComponent();
+        if (component != null) {
+            component.inject(this);
+            presenter.attachView(this);
+        }
     }
+
+//    @Override
+//    public WelcomeContract.Presenter<WelcomeContract.View> getPresenter() {
+//        return new WelcomePresenter<>();
+//    }
 
     @Override
     public void initialize() {

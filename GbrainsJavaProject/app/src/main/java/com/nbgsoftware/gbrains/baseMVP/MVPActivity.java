@@ -10,6 +10,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
+import com.nbgsoftware.gbrains.GbrainsApp;
+import com.nbgsoftware.gbrains.di.component.ActivityComponent;
+import com.nbgsoftware.gbrains.di.component.DaggerActivityComponent;
+import com.nbgsoftware.gbrains.di.module.ActivityModule;
 import com.nbgsoftware.gbrains.utils.NetworkUtils;
 
 public abstract class MVPActivity<VB extends ViewBinding>
@@ -17,13 +21,24 @@ public abstract class MVPActivity<VB extends ViewBinding>
 
     public VB binding;
 
+    private ActivityComponent activityComponent;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        activityComponent = DaggerActivityComponent.builder()
+                .activityModule(new ActivityModule(this))
+                .applicationComponent(((GbrainsApp) getApplication()).getComponent())
+                .build();
 
         binding = getActivityBinding();
         setContentView(binding.getRoot());
     }
+
+    public ActivityComponent getActivityComponent() {
+        return activityComponent;
+    }
+
 
     @Override
     public void showMessage(String message) {
@@ -58,5 +73,5 @@ public abstract class MVPActivity<VB extends ViewBinding>
         }
     }
 
-    protected abstract VB getActivityBinding();
+    public abstract VB getActivityBinding();
 }
