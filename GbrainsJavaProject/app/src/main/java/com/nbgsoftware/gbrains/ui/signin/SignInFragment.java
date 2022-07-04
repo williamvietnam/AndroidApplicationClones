@@ -1,11 +1,15 @@
 package com.nbgsoftware.gbrains.ui.signin;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.annotation.Nullable;
 
 import com.nbgsoftware.gbrains.R;
 import com.nbgsoftware.gbrains.baseMVP.MVPFragmentPresenter;
 import com.nbgsoftware.gbrains.databinding.FragmentSignInBinding;
+import com.nbgsoftware.gbrains.di.component.ActivityComponent;
 
 public class SignInFragment extends MVPFragmentPresenter<
         FragmentSignInBinding,
@@ -19,9 +23,19 @@ public class SignInFragment extends MVPFragmentPresenter<
     }
 
     @Override
-    public SignInContract.Presenter<SignInContract.View> getPresenter() {
-        return new SignInPresenter<>();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ActivityComponent component = getActivityComponent();
+        if (component != null) {
+            component.inject(this);
+            presenter.attachView(this);
+        }
     }
+
+//    @Override
+//    public SignInContract.Presenter<SignInContract.View> getPresenter() {
+//        return new SignInPresenter<>();
+//    }
 
     @Override
     public void initialize() {

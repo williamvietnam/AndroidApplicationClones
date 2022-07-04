@@ -12,8 +12,15 @@ import com.nbgsoftware.gbrains.utils.Utils;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 public class WelcomePresenter<V extends WelcomeContract.View>
         extends MVPPresenter<V> implements WelcomeContract.Presenter<V> {
+
+    @Inject
+    public WelcomePresenter(){
+
+    }
 
     /**
      * Cách 1: Sử dụng Gson để lấy data từ tệp assets

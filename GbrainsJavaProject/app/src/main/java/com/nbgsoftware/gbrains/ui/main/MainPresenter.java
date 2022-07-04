@@ -8,8 +8,15 @@ import com.nbgsoftware.gbrains.data.models.response.FeaturedQuestionResponse;
 import com.nbgsoftware.gbrains.data.models.response.TrendPostResponse;
 import com.nbgsoftware.gbrains.utils.Utils;
 
+import javax.inject.Inject;
+
 public class MainPresenter<V extends MainContract.View>
         extends MVPPresenter<V> implements MainContract.Presenter<V> {
+
+    @Inject
+    public MainPresenter(){
+        super();
+    }
 
     @Override
     public void getDataForBannerFromFirebase() {
