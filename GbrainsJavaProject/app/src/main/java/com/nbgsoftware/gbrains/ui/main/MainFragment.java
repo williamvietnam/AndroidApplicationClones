@@ -1,7 +1,10 @@
 package com.nbgsoftware.gbrains.ui.main;
 
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
+import androidx.annotation.Nullable;
 
 import com.nbgsoftware.gbrains.baseMVP.MVPFragmentPresenter;
 import com.nbgsoftware.gbrains.data.models.FeaturedQuestion;
@@ -9,6 +12,7 @@ import com.nbgsoftware.gbrains.data.models.TrendPost;
 import com.nbgsoftware.gbrains.data.models.response.FeaturedQuestionResponse;
 import com.nbgsoftware.gbrains.data.models.response.TrendPostResponse;
 import com.nbgsoftware.gbrains.databinding.FragmentMainBinding;
+import com.nbgsoftware.gbrains.di.component.ActivityComponent;
 import com.nbgsoftware.gbrains.ui.main.adapters.BannerAdapter;
 import com.nbgsoftware.gbrains.ui.main.adapters.FeaturedQuestionAdapter;
 import com.nbgsoftware.gbrains.ui.main.adapters.TrendingPostAdapter;
@@ -34,9 +38,19 @@ public class MainFragment extends MVPFragmentPresenter<
     }
 
     @Override
-    public MainContract.Presenter<MainContract.View> getPresenter() {
-        return new MainPresenter<>();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ActivityComponent component = getActivityComponent();
+        if (component != null) {
+            component.inject(this);
+            presenter.attachView(this);
+        }
     }
+
+//    @Override
+//    public MainContract.Presenter<MainContract.View> getPresenter() {
+//        return new MainPresenter<>();
+//    }
 
     @Override
     public void initialize() {

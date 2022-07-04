@@ -3,7 +3,11 @@ package com.nbgsoftware.gbrains.data.local.preferences;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import androidx.annotation.NonNull;
+import com.nbgsoftware.gbrains.di.ApplicationContext;
+import com.nbgsoftware.gbrains.di.PreferenceInfo;
+
+import javax.inject.Inject;
+import javax.inject.Singleton;
 
 public class PreferencesHelperImplement implements PreferencesHelper {
 
@@ -11,7 +15,7 @@ public class PreferencesHelperImplement implements PreferencesHelper {
 
     private final SharedPreferences prefs;
 
-    public PreferencesHelperImplement(@NonNull Context context, String prefFileName) {
+    public PreferencesHelperImplement(@ApplicationContext Context context, @PreferenceInfo String prefFileName) {
         this.prefs = context.getSharedPreferences(prefFileName, Context.MODE_PRIVATE);
     }
 

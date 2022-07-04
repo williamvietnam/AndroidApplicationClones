@@ -16,7 +16,7 @@ public interface MVPContract {
         void hideKeyboard();
     }
 
-    interface Presenter<V extends View> extends LifecycleObserver {
+    interface Presenter<V extends View>{
         void attachView(V view);
 
         boolean isViewAttached();

@@ -1,5 +1,6 @@
 package com.nbgsoftware.gbrains.baseMVP;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,10 +13,21 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.viewbinding.ViewBinding;
 
+import com.nbgsoftware.gbrains.di.component.ActivityComponent;
+
 public abstract class MVPFragment<VB extends ViewBinding> extends Fragment implements MVPContract.View {
 
     private MVPActivity<VB> activity;
     public VB binding;
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        if (context instanceof MVPActivity) {
+            MVPActivity<VB> activity = (MVPActivity<VB>) context;
+            this.activity = activity;
+        }
+    }
 
     @Nullable
     @Override
@@ -69,6 +81,13 @@ public abstract class MVPFragment<VB extends ViewBinding> extends Fragment imple
         if (activity != null) {
             activity.hideKeyboard();
         }
+    }
+
+    public ActivityComponent getActivityComponent() {
+        if (activity != null) {
+            return activity.getActivityComponent();
+        }
+        return null;
     }
 
     public String getFragmentTag() {
