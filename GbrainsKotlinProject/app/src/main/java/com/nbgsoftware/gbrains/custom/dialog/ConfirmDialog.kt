@@ -52,7 +52,7 @@ class ConfirmDialog constructor(context: Context){
         binding.rightClick.text = context.resources.getText(rightClick)
     }
 
-    fun setCancelableDialog(isCancelable: Boolean): ConfirmDialog{
+    fun setCancelableDialog(isCancelable: Boolean): ConfirmDialog {
 
         return this
     }

@@ -7,7 +7,8 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import java.util.concurrent.atomic.AtomicBoolean
 
-class SingleLiveEvent<T>: MutableLiveData<T>() {
+class SingleLiveEvent<T> : MutableLiveData<T>() {
+
     private val pending = AtomicBoolean(false)
 
     @MainThread
@@ -22,8 +23,7 @@ class SingleLiveEvent<T>: MutableLiveData<T>() {
                 if (pending.compareAndSet(true, false)) {
                     observer.onChanged(t)
                 }
-            }
-        )
+            })
     }
 
     @MainThread

@@ -47,7 +47,7 @@ class ErrorDialog constructor(context: Context) {
         binding.textButtonClick.text = context.resources.getText(textButtonClick)
     }
 
-    fun setOnClick(): ErrorDialog{
+    fun setOnClick(): ErrorDialog {
         binding.buttonClick.visibility = View.VISIBLE
         binding.buttonClick.setOnClickListener{
             callBack?.onClick()
