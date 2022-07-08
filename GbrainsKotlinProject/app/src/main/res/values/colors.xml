@@ -11,4 +11,21 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gray">#BEBEBE</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="color_button_common_blue">#4356B4</color>
+
+    <!--color common-->
+    <color name="background_common">@color/white</color>
+    <color name="background_color_white">@color/white</color>
+    <color name="background_color_gray">#EFEFF4</color>
+    <color name="start_color_btn_common">#087EFF</color>
+    <color name="end_color_btn_common">#05E8BA</color>
+    <color name="color_hint_edit_text">#333333</color>
+    <color name="actionbar_title_color">#525252</color>
 </resources>
