@@ -3,6 +3,8 @@ package com.nbgsoftware.gbrains.baseMVP;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.OnLifecycleEvent;
 
+import com.nbgsoftware.gbrains.data.remote.ApiHelperImplement;
+
 import java.lang.ref.WeakReference;
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
@@ -12,6 +14,12 @@ public abstract class MVPPresenter<V extends MVPContract.View> implements MVPCon
     private WeakReference<V> weakView = null;
 
     protected CompositeDisposable compositeDisposable;
+
+    private final ApiHelperImplement apiHelperImplement;
+
+    public MVPPresenter() {
+        apiHelperImplement = new ApiHelperImplement();
+    }
 
     @Override
     final public boolean isViewAttached() {
@@ -53,5 +61,9 @@ public abstract class MVPPresenter<V extends MVPContract.View> implements MVPCon
     @Override
     public void onDestroyScreen() {
         // handle at child
+    }
+
+    public ApiHelperImplement getApiHelper() {
+        return apiHelperImplement;
     }
 }

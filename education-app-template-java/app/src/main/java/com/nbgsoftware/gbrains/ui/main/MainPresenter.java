@@ -20,7 +20,7 @@ public class MainPresenter<V extends MainContract.View>
 
     @Override
     public void getDataForBannerFromFirebase() {
-
+        getApiHelper().getApiService().getDataUser();
     }
 
     @Override
