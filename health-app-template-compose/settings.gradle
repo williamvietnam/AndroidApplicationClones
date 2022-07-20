@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "GbrainsCompose"
+rootProject.name = "HealthTemplate"
 include ':app'

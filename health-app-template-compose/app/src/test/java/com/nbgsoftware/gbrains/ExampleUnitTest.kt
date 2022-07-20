@@ -1,4 +1,4 @@
-package com.nbgsoftware.gbrains
+package com.android.health
 
 import org.junit.Test
 
