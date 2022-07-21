@@ -6,26 +6,26 @@ import com.nbgsoftware.gbrains.di.component.ApplicationComponent;
 import com.nbgsoftware.gbrains.di.component.DaggerApplicationComponent;
 import com.nbgsoftware.gbrains.di.module.ApplicationModule;
 
-public class GbrainsApp extends MultiDexApplication {
+public class EducationAppTemplate extends MultiDexApplication {
 
-    private ApplicationComponent mApplicationComponent;
+    private ApplicationComponent applicationComponent;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mApplicationComponent = DaggerApplicationComponent.builder()
+        applicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this)).build();
 
-        mApplicationComponent.inject(this);
+        applicationComponent.inject(this);
     }
 
     public ApplicationComponent getComponent() {
-        return mApplicationComponent;
+        return applicationComponent;
     }
 
 
     // Needed to replace the component with a test specific one
     public void setComponent(ApplicationComponent applicationComponent) {
-        mApplicationComponent = applicationComponent;
+        this.applicationComponent = applicationComponent;
     }
 }

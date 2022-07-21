@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewbinding.ViewBinding;
 
-import com.nbgsoftware.gbrains.GbrainsApp;
+import com.nbgsoftware.gbrains.EducationAppTemplate;
 import com.nbgsoftware.gbrains.di.component.ActivityComponent;
 import com.nbgsoftware.gbrains.di.component.DaggerActivityComponent;
 import com.nbgsoftware.gbrains.di.module.ActivityModule;
@@ -28,7 +28,7 @@ public abstract class MVPActivity<VB extends ViewBinding>
         super.onCreate(savedInstanceState);
         activityComponent = DaggerActivityComponent.builder()
                 .activityModule(new ActivityModule(this))
-                .applicationComponent(((GbrainsApp) getApplication()).getComponent())
+                .applicationComponent(((EducationAppTemplate) getApplication()).getComponent())
                 .build();
 
         binding = getActivityBinding();
