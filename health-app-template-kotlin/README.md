@@ -1,1 +1,0 @@
-Health application template using Kotlin MVVM
