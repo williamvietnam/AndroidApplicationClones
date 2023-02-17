@@ -2,8 +2,8 @@ package com.instagram.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.base.mvvm.core.data.network.models.responses.BaseResponse
-import com.base.mvvm.core.data.network.models.responses.ErrorResponse
+import com.instagram.data.network.models.responses.BaseResponse
+import com.instagram.data.network.models.responses.ErrorResponse
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import okhttp3.ResponseBody
