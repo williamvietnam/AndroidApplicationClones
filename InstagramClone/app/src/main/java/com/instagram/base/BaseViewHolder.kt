@@ -1,4 +1,4 @@
-package com.base.mvvm.core.base
+package com.instagram.base
 
 import android.view.View
 
@@ -17,18 +17,4 @@ abstract class BaseViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView
     fun getCurrentPosition(): Int {
         return this.currentPosition
     }
-}
-
-abstract class BaseViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
-
-    var currentPosition = 0
-        private set
-
-    abstract fun clear()
-
-    open fun onBind(position: Int) {
-        currentPosition = position
-        clear()
-    }
-
 }

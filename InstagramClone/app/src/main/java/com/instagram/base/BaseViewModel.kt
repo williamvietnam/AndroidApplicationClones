@@ -1,11 +1,9 @@
-package com.base.mvvm.core.base
+package com.instagram.base
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.base.mvvm.R
 import com.base.mvvm.core.data.network.models.responses.BaseResponse
 import com.base.mvvm.core.data.network.models.responses.ErrorResponse
-import com.base.mvvm.core.utilities.SingleLiveEvent
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import okhttp3.ResponseBody
@@ -17,7 +15,7 @@ import java.net.ConnectException
  * */
 abstract class BaseViewModel : ViewModel() {
 
-    var messageError = SingleLiveEvent<Any>()
+    var messageError = MutableLiveData<Any>()
     var isLoading = MutableLiveData<Boolean>()
 
     fun handleError(
@@ -55,7 +53,7 @@ abstract class BaseViewModel : ViewModel() {
                 messageError.postValue(throwable.message)
             }
         } else {
-            messageError.postValue(R.string.not_connected_internet)
+            messageError.postValue("Not connected internet")
         }
 
     }

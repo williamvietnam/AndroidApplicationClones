@@ -1,12 +1,12 @@
-package com.base.mvvm.core.base
+package com.instagram.base
 
 import android.os.Bundle
-import androidx.databinding.ViewDataBinding
+import androidx.viewbinding.ViewBinding
 
 /**
  * Author: William Giang Nguyen | 8/7/2022
  * */
-abstract class BaseActivityViewModel<BD : ViewDataBinding, VM : BaseViewModel> :
+abstract class BaseActivityViewModel<BD : ViewBinding, VM : BaseViewModel> :
     BaseActivity<BD>() {
 
     private lateinit var viewModel: VM
