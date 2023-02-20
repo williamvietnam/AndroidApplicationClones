@@ -1,1 +1,1 @@
-#Author: William Giang Nguyen
+Shopee Clone
