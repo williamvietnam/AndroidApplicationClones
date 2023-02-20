@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:padding="16dp">
+    android:padding="@dimen/_16sdp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -93,6 +93,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:orientation="horizontal">
 
         <TextView
