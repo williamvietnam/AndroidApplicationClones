@@ -1,1 +1,1 @@
-#Author: William Giang Nguyen
+Instagram Clone
