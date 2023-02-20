@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button0095f.xml" value="0.2265" />
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button_0095F6.xml" value="0.2265" />
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button_blue.xml" value="0.2265" />
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/ic_instagram_logo_2.xml" value="0.2265" />
         <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_register_by_email.xml" value="0.25416666666666665" />
+        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_register_by_phone.xml" value="0.25416666666666665" />
         <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_sign_in.xml" value="0.25416666666666665" />
         <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_sign_up.xml" value="0.2421875" />
         <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />

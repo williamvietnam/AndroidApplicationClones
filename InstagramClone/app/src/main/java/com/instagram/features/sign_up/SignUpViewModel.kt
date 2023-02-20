@@ -1,4 +1,4 @@
-package com.instagram.features.login
+package com.instagram.features.sign_up
 
 import com.instagram.base.BaseViewModel
 

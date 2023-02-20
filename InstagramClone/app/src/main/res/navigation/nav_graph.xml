@@ -18,15 +18,18 @@
 
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.instagram.features.login.SignInFragment"
+        android:name="com.instagram.features.sign_in.SignInFragment"
         android:label="SignInFragment"
         tools:layout="@layout/fragment_sign_in">
 
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.instagram.features.login.SignUpFragment"
+        android:name="com.instagram.features.sign_up.SignUpFragment"
         android:label="SignUpFragment"
         tools:layout="@layout/fragment_sign_up">
 

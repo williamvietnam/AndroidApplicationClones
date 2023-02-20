@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">InstagramClone</string>
+    <string name="back">back</string>
+    <string name="enter_phone_or_email">Enter Phone or Email</string>
+    <string name="next">next</string>
+    <string name="phone_number">Phone number</string>
 </resources>
