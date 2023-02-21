@@ -4,4 +4,9 @@
     <string name="enter_phone_or_email">Enter Phone or Email</string>
     <string name="next">next</string>
     <string name="phone_number">Phone number</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="personal">Personal</string>
+    <string name="notifications">Notifications</string>
+    <string name="reels">Reels</string>
 </resources>
