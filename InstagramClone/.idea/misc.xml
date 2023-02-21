@@ -1,28 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button0095f.xml" value="0.2265" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button_0095F6.xml" value="0.2265" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/background_button_blue.xml" value="0.2265" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/drawable/ic_instagram_logo_2.xml" value="0.2265" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_register_by_email.xml" value="0.25416666666666665" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_register_by_phone.xml" value="0.25416666666666665" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_sign_in.xml" value="0.25416666666666665" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_sign_up.xml" value="0.2421875" />
-        <entry key="..\:/MyGithub/AndroidApplicationClones/InstagramClone/app/src/main/res/layout/fragment_splash.xml" value="0.25416666666666665" />
-      </map>
-    </option>
-  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK" />
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.25416666666666665" />
-      </ProjectState>
-    </option>
-  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />
 </project>
