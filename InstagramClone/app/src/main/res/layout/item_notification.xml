@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_4sdp"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/layoutFollow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:paddingVertical="@dimen/_4sdp"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvAvatar"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:src="@drawable/ic_instagram_logo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_toStartOf="@id/btnFollow"
+            android:layout_toEndOf="@id/imvAvatar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:text="williamvietnam started follow you" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:background="@drawable/background_button0095f6"
+            android:paddingHorizontal="@dimen/_24sdp"
+            android:text="@string/follow"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutInteractPosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvAvatar2"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:background="@drawable/background_circle"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_person"
+            app:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContent2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_toStartOf="@id/imvPost"
+            android:layout_toEndOf="@id/imvAvatar2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            tools:text="williamvietnam liked your photo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imvPost"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_instagram_logo" />
+    </RelativeLayout>
+</FrameLayout>
