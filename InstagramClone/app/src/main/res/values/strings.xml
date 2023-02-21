@@ -9,4 +9,6 @@
     <string name="personal">Personal</string>
     <string name="notifications">Notifications</string>
     <string name="reels">Reels</string>
+    <string name="follow">Follow</string>
+    <string name="cancel">Cancel</string>
 </resources>
