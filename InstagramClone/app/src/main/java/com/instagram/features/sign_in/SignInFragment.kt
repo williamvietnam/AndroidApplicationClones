@@ -26,5 +26,9 @@ class SignInFragment : BaseFragmentViewModel<FragmentSignInBinding, SignInViewMo
         this.binding.buttonSignUp.setOnClickListener {
             findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
         }
+
+        this.binding.btnLogin.setOnClickListener {
+            findNavController().navigate(R.id.action_signInFragment_to_homeFragment)
+        }
     }
 }

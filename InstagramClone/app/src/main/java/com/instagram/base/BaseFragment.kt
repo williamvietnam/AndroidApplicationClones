@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.instagram.features.main.MainActivity
+
 
 /**
  * Author: William Giang Nguyen | 8/7/2022
@@ -73,5 +75,9 @@ abstract class BaseFragment<BD : ViewBinding>() : Fragment() {
     override fun onDestroyView() {
         _binding = null
         super.onDestroyView()
+    }
+
+    fun isVisibleBottomNavigationView(isShow: Boolean) {
+        (requireActivity() as MainActivity).isVisibleBottomNavigationView(isShow)
     }
 }
