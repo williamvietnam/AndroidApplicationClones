@@ -10,14 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NotesClone">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activities.CreateNoteActivity"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>
