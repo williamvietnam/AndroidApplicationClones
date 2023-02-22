@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
@@ -38,6 +39,17 @@
         android:textColorHint="#80FFFFFF"
         android:textSize="22sp"
         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="6dp"
+        android:layout_marginTop="6dp"
+        android:includeFontPadding="false"
+        android:textColor="#80FFFFFF"
+        android:textSize="15sp"
+        tools:text="Jul 23, 2023" />
 
     <LinearLayout
         android:layout_width="match_parent"
