@@ -40,7 +40,11 @@
         android:layout_height="0dp"
         android:layout_above="@id/layoutActions"
         android:layout_below="@id/search"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+        app:spanCount="2"
+        tools:listitem="@layout/item_container_note" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/btnAddNotesMain"
